@@ -484,6 +484,85 @@ a {
   color: var(--muted);
 }
 
+.recent-work-section {
+  background: linear-gradient(180deg, #fff9f0, #fff3e3);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.work-card {
+  margin: 0;
+}
+
+.work-photo-placeholder {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 2px solid rgba(216, 95, 25, 0.28);
+  border-radius: 10px;
+  color: #f9e8d2;
+  background:
+    linear-gradient(180deg, rgba(47, 37, 34, 0.25), rgba(47, 37, 34, 0.62)),
+    linear-gradient(135deg, #4a3127, #2f2522 58%, #7f431d);
+  box-shadow: 0 14px 30px rgba(47, 37, 34, 0.14);
+}
+
+.work-photo-placeholder::before,
+.work-photo-placeholder::after {
+  position: absolute;
+  content: "";
+  border-radius: 999px;
+  background: rgba(247, 201, 72, 0.12);
+}
+
+.work-photo-placeholder::before {
+  width: 120px;
+  height: 120px;
+  top: -18px;
+  right: -22px;
+}
+
+.work-photo-placeholder::after {
+  width: 82px;
+  height: 82px;
+  bottom: -12px;
+  left: -14px;
+}
+
+.work-photo-placeholder span {
+  position: relative;
+  z-index: 1;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 248, 238, 0.34);
+  border-radius: 999px;
+  background: rgba(31, 24, 23, 0.42);
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+.work-card figcaption {
+  margin-top: 12px;
+  color: var(--coal);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.work-note {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-style: italic;
+}
+
 .area-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.95fr);
@@ -523,26 +602,6 @@ a {
   color: #f8e3cc;
   font-size: 0.98rem;
   font-weight: 900;
-}
-
-.town-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
-  margin: 0 0 22px;
-  padding: 0;
-  list-style: none;
-}
-
-.town-grid li {
-  padding: 8px 10px;
-  border: 1px solid rgba(247, 201, 72, 0.42);
-  border-radius: 999px;
-  color: #f8e3cc;
-  background: rgba(255, 248, 238, 0.07);
-  font-size: 0.88rem;
-  font-weight: 900;
-  text-align: center;
 }
 
 .split {
@@ -771,6 +830,7 @@ a {
   .trust-band,
   .family-section,
   .service-grid,
+  .work-grid,
   .area-section,
   .split,
   .testimonial-grid,
@@ -893,10 +953,6 @@ a {
     margin-top: 20px;
   }
 
-  .town-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .mobile-call-bar {
     position: fixed;
     right: 12px;
@@ -958,6 +1014,10 @@ a {
 
   .area-panel .button {
     width: 100%;
+  }
+
+  .work-card figcaption {
+    margin-top: 10px;
   }
 
   .tim-photo-placeholder {
