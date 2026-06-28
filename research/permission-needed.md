@@ -12,6 +12,7 @@ Ask the owner for approval before using or publishing:
 - Testimonials or review excerpts.
 - Any Google, Facebook, or third-party review wording.
 - Any family-owned, local ownership, or similar business claims need owner confirmation.
+- Any family photo from Facebook, owner-provided files, or other public profiles needs owner permission before use.
 - Claims about emergency service, years of experience, certifications, licenses, warranties, rankings, or guarantees.
 - Final service area list and any claims about response time.
 
