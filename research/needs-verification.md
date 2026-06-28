@@ -15,6 +15,7 @@ Confirm these items with Slater Heating or a reliable public source before launc
 - Confirm logo permission.
 - Confirm preferred family-owned wording and how Tim wants the business story presented.
 - Confirm Google Business Profile/review link.
+- Confirm whether the sample testimonial cards should be removed, replaced with real owner-approved testimonials, or rewritten as review-theme summaries.
 - Confirm permission to use as a portfolio example.
 - Official business name and preferred spelling.
 - Confirm brand colors.
