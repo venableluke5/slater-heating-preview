@@ -37,6 +37,7 @@ Date accessed: June 27, 2026.
 - Reviews/trust copy
   - No Google review/profile link was confirmed.
   - No customer reviews were copied or quoted.
-- Hero visual
-  - Non-branded placeholder SVG illustration created for this mockup.
-  - It is not a Slater Heating photo, logo, customer photo, employee photo, or business-owned asset.
+- Logo file: `assets/slater-logo.jpg`
+  - Source: user-provided downloaded file from Slater Heating's Facebook page.
+  - Used only as a private mockup visual reference and site logo.
+  - Status: needs owner permission before public launch or portfolio use.
