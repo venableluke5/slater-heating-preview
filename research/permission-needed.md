@@ -12,6 +12,7 @@ Ask the owner for approval before using or publishing:
 - Employee photos, owner photos, or crew photos.
 - Customer photos, home photos, jobsite photos, or before-and-after photos.
 - Testimonials or review excerpts.
+- Sample testimonial names, towns, and quote wording used in the mockup need owner approval or replacement with real approved testimonials before launch.
 - Any Google, Facebook, or third-party review wording.
 - Any family-owned, local ownership, or similar business claims need owner confirmation.
 - Any family photo from Facebook, owner-provided files, or other public profiles needs owner permission before use.
