@@ -58,8 +58,9 @@ a {
 
 .brand-logo {
   display: block;
-  width: clamp(150px, 19vw, 230px);
-  height: 58px;
+  width: 210px;
+  height: auto;
+  max-height: 70px;
   object-fit: contain;
   object-position: left center;
 }
@@ -659,10 +660,6 @@ a {
     flex-wrap: wrap;
   }
 
-  .brand-logo {
-    height: 52px;
-  }
-
   .nav {
     order: 3;
     width: 100%;
@@ -695,8 +692,9 @@ a {
   }
 
   .brand-logo {
-    width: 154px;
-    height: 48px;
+    width: 160px;
+    height: auto;
+    max-height: 54px;
   }
 
   .header-cta {
