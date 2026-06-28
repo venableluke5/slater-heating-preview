@@ -3,6 +3,7 @@
 Ask the owner for approval before using or publishing:
 
 - Slater Heating logo or brand marks.
+- Slater Heating logo from Facebook page/downloaded file - needs owner permission before public launch.
 - Business-owned photos of vehicles, equipment, jobsites, shop space, or signage.
 - Employee photos, owner photos, or crew photos.
 - Customer photos, home photos, jobsite photos, or before-and-after photos.
@@ -10,7 +11,6 @@ Ask the owner for approval before using or publishing:
 - Any Google, Facebook, or third-party review wording.
 - Claims about emergency service, years of experience, certifications, licenses, warranties, rankings, or guarantees.
 - Final service area list and any claims about response time.
-- The placeholder HVAC illustration if they want it to remain in the public version; otherwise replace it with approved business-owned imagery.
 
 ## Manual research checklist
 
