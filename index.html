@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="emergency-banner" data-emergency-banner>
+      <a href="tel:2072996895">No heat? Call Tim directly — (207) 299-6895</a>
+      <button class="emergency-close" type="button" aria-label="Dismiss emergency call banner" data-emergency-close>
+        ×
+      </button>
+    </div>
+
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Slater Heating home">
         <img class="brand-logo" src="assets/Untitled%20design%20-%203.png" alt="Slater Heating logo" />
@@ -108,32 +115,69 @@
 
         <div class="service-grid">
           <article class="service-card">
-            <span class="service-icon" aria-hidden="true">oil</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 3c4 4.2 6 7.5 6 10.3A6 6 0 0 1 6 13.3C6 10.5 8 7.2 12 3z" />
+                <path d="M8.9 13.4A3.1 3.1 0 0 0 12 16.5" />
+              </svg>
+            </span>
             <h3>Oil Heating Systems</h3>
             <p>Service, cleaning, and support for oil heating systems.</p>
           </article>
           <article class="service-card">
-            <span class="service-icon" aria-hidden="true">gas</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 3c2.5 2.4 4 4.9 4 7.4a4 4 0 0 1-8 0C8 7.9 9.5 5.4 12 3z" />
+                <path d="M12 13.5c1.5-1.5 2.3-3 2.3-4.4" />
+                <path d="M10 19h4" />
+              </svg>
+            </span>
             <h3>Propane &amp; Natural Gas</h3>
             <p>Help with propane and natural gas heating systems for local homeowners.</p>
           </article>
           <article class="service-card">
-            <span class="service-icon" aria-hidden="true">pump</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M4 8h16v8H4z" />
+                <path d="M7 11h10" />
+                <path d="M7 14h6" />
+                <path d="M18 18v2" />
+                <path d="M6 18v2" />
+              </svg>
+            </span>
             <h3>Heat Pump Cleaning</h3>
             <p>Heat pump service and cleaning to help systems run cleaner and more efficiently.</p>
           </article>
           <article class="service-card">
-            <span class="service-icon" aria-hidden="true">svc</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M14.7 6.3a4 4 0 0 0-5 5L4 17v3h3l5.7-5.7a4 4 0 0 0 5-5l-2.5 2.5-3-3z" />
+              </svg>
+            </span>
             <h3>Heating Service</h3>
             <p>Straightforward help when your heating system is not keeping up.</p>
           </article>
           <article class="service-card">
-            <span class="service-icon" aria-hidden="true">clean</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M6 4h12" />
+                <path d="M8 4l1 16h6l1-16" />
+                <path d="M10 8h4" />
+                <path d="M10 12h4" />
+                <path d="M10 16h4" />
+              </svg>
+            </span>
             <h3>Seasonal Cleanings</h3>
             <p>Routine cleanings to help keep heating equipment maintained.</p>
           </article>
           <article class="service-card">
-            <span class="service-icon" aria-hidden="true">install</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M4 20h16" />
+                <path d="M6 20V9l6-5 6 5v11" />
+                <path d="M10 20v-6h4v6" />
+              </svg>
+            </span>
             <h3>Installations</h3>
             <p>Heating installation support for homeowners in Greater Bangor and Central Maine.</p>
           </article>
@@ -151,6 +195,22 @@
         </div>
         <div class="area-panel">
           <p>Common service areas include Bangor, Brewer, Eddington, Holden, and surrounding towns.</p>
+          <ul class="town-grid" aria-label="Common service area towns">
+            <li>Bangor</li>
+            <li>Brewer</li>
+            <li>Eddington</li>
+            <li>Holden</li>
+            <li>Hampden</li>
+            <li>Orrington</li>
+            <li>Veazie</li>
+            <li>Old Town</li>
+            <li>Orono</li>
+            <li>Bradley</li>
+            <li>Clifton</li>
+            <li>Otis</li>
+            <li>Winterport</li>
+            <li>Bucksport</li>
+          </ul>
           <a class="button button-primary" href="tel:2072996895">Call (207) 299-6895</a>
         </div>
       </section>
@@ -161,6 +221,12 @@
           <h2 id="about-title">Family-owned heating help from Tim</h2>
         </div>
         <div class="copy-stack">
+          <div class="tim-photo-placeholder" role="img" aria-label="Photo placeholder for Tim">
+            <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <circle cx="32" cy="24" r="12" />
+              <path d="M14 54c2.8-11 9-16.5 18-16.5S47.2 43 50 54" />
+            </svg>
+          </div>
           <p>
             Slater Heating is a family-owned heating service business helping homeowners throughout
             Greater Bangor and Central Maine keep their homes warm, safe, and comfortable.
@@ -169,6 +235,39 @@
             Tim has been in the field for 25 years and is licensed and insured for heating service,
             cleanings, installations, and heat pump servicing and cleaning.
           </p>
+        </div>
+      </section>
+
+      <section class="testimonials-section" aria-labelledby="testimonials-title">
+        <div class="section-heading">
+          <p class="eyebrow">What Homeowners Say</p>
+          <h2 id="testimonials-title">What Homeowners Say</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5-star rating">★★★★★</div>
+            <p>
+              “Tim was reliable, straightforward, and easy to talk with. He explained what was going
+              on with the heating system and got everything handled without making it complicated.”
+            </p>
+            <strong>— Sarah M., Holden</strong>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5-star rating">★★★★★</div>
+            <p>
+              “It is hard to find someone who is both honest and responsive. Tim showed up when he
+              said he would and took the time to do the work right.”
+            </p>
+            <strong>— Mark D., Bangor</strong>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5-star rating">★★★★★</div>
+            <p>
+              “Slater Heating gave us clear answers and dependable service before the cold weather
+              settled in. We felt like we were working with someone local who cared.”
+            </p>
+            <strong>— Jennifer R., Brewer</strong>
+          </article>
         </div>
       </section>
 
@@ -247,6 +346,11 @@
       <p>Preview mockup only — not affiliated with Slater Heating unless approved.</p>
       <small>Website concept by ServiceSide Sites</small>
     </footer>
+
+    <a class="mobile-call-bar" href="tel:2072996895" aria-label="Call Tim at (207) 299-6895">
+      <span aria-hidden="true">☎</span>
+      Call Tim — (207) 299-6895
+    </a>
 
     <script src="script.js"></script>
   </body>
