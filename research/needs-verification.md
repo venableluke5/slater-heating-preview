@@ -6,6 +6,7 @@ Confirm these items with Slater Heating or a reliable public source before launc
 - Confirm official logo usage.
 - Confirm brand colors.
 - Confirm whether family-owned wording is accurate before using it.
+- Confirm the names, relationship, and preferred wording for any family-business section.
 - Whether the business is located in Eddington, Maine or serves Eddington from a nearby town.
 - Phone number.
 - Email address.
