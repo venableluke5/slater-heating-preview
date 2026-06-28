@@ -1,6 +1,6 @@
 # Source Notes
 
-Date accessed: June 27, 2026.
+Date accessed: June 28, 2026.
 
 ## Public sources checked
 
@@ -27,20 +27,29 @@ Date accessed: June 27, 2026.
 
 - Business name: Slater Heating
   - Source: user-provided brief for a dry-run concept.
-  - Status: needs owner/public-source verification before launch.
-- Approximate location: in or near Eddington, Maine
-  - Source: user-provided brief for a dry-run concept.
-  - Status: needs owner/public-source verification before launch.
-- Service categories: heating repair, heating installation/replacement, furnace service, boiler service, maintenance, general HVAC help
-  - Source: conservative HVAC categories requested by the user when public information is uncertain.
-  - Status: each category needs owner confirmation before launch.
-- Service area wording: Eddington and nearby Bangor-area communities
-  - Source: user-provided Eddington-area direction plus reasonable local-context copy for a preview.
-  - Status: final town list needs owner confirmation before launch.
+- Phone: (207) 299-6895 / `tel:2072996895`
+  - Source: user-provided screenshots.
+- Owner/person mentioned: Tim
+  - Source: user-provided screenshots.
+- Experience: Tim has been in the field for 25 years
+  - Source: user-provided screenshots.
+- Licensed and insured wording
+  - Source: user-provided screenshots.
+- Service categories: oil heating systems, propane/natural gas heating systems, heating service, heating cleanings, heating installations, heat pump servicing/cleaning
+  - Source: user-provided screenshots.
+- Service area wording: Greater Bangor and Central Maine
+  - Source: user-provided screenshots.
+- Nearby town list: Bangor, Brewer, Eddington, Holden, Veazie, Clifton, Bradley, Milford, Old Town
+  - Source: user-provided direction for the preview.
+  - Status: final towns served should be confirmed before launch.
 - Reviews/trust copy
   - No Google review/profile link was confirmed.
   - No customer reviews were copied or quoted.
 - Logo file: `assets/slater-logo.jpg`
   - Source: user-provided downloaded file from Slater Heating's Facebook page.
   - Used only as a private mockup visual reference and site logo.
+  - Status: needs owner permission before public launch or portfolio use.
+- Logo files: `assets/Untitled design - 2.png` and `assets/Untitled design - 3.png`
+  - Source: user-provided logo files in the GitHub repository.
+  - Used for the branded header and hero areas.
   - Status: needs owner permission before public launch or portfolio use.
