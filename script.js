@@ -3,6 +3,7 @@ const statusLine = document.querySelector(".form-status");
 const header = document.querySelector("[data-header]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const nav = document.querySelector("[data-nav]");
+const emergencyClose = document.querySelector("[data-emergency-close]");
 
 if (header && menuToggle && nav) {
   menuToggle.addEventListener("click", () => {
@@ -20,6 +21,12 @@ if (header && menuToggle && nav) {
       menuToggle.setAttribute("aria-expanded", "false");
       menuToggle.setAttribute("aria-label", "Open navigation menu");
     }
+  });
+}
+
+if (emergencyClose) {
+  emergencyClose.addEventListener("click", () => {
+    document.body.classList.add("emergency-dismissed");
   });
 }
 
