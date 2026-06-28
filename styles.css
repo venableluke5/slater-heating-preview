@@ -313,6 +313,7 @@ a {
 
 .section,
 .area-section,
+.family-section,
 .reviews-section,
 .contact-section {
   padding: clamp(58px, 8vw, 96px) clamp(18px, 5vw, 72px);
@@ -329,6 +330,7 @@ a {
 
 .section h2,
 .area-copy h2,
+.family-copy h2,
 .reviews-content h2,
 .contact-copy h2 {
   max-width: 830px;
@@ -338,6 +340,7 @@ a {
 
 .section-heading p,
 .area-copy p,
+.family-copy p,
 .reviews-content p,
 .contact-copy p,
 .copy-stack p {
@@ -439,6 +442,68 @@ a {
 
 .copy-stack p:first-child {
   margin-top: 0;
+}
+
+.family-section {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(28px, 6vw, 72px);
+  align-items: center;
+  background: linear-gradient(180deg, #fff8ef, var(--warm-panel));
+  border-top: 1px solid var(--line);
+}
+
+.family-photo {
+  position: relative;
+  min-height: clamp(280px, 42vw, 440px);
+  overflow: hidden;
+  border: 2px solid var(--coal);
+  border-radius: 6px;
+  background:
+    linear-gradient(135deg, rgba(47, 37, 34, 0.72), rgba(47, 37, 34, 0.4)),
+    radial-gradient(circle at 28% 24%, rgba(247, 201, 72, 0.72), transparent 16%),
+    radial-gradient(circle at 72% 28%, rgba(255, 133, 40, 0.54), transparent 18%),
+    linear-gradient(135deg, var(--coal), #6d3b20);
+  box-shadow: 10px 10px 0 rgba(217, 95, 24, 0.18);
+}
+
+.family-photo::before,
+.family-photo::after {
+  position: absolute;
+  content: "";
+  border: 2px solid rgba(255, 248, 238, 0.48);
+  border-radius: 50%;
+  background: rgba(255, 248, 238, 0.13);
+}
+
+.family-photo::before {
+  width: 110px;
+  height: 110px;
+  right: 22%;
+  bottom: 30%;
+}
+
+.family-photo::after {
+  width: 150px;
+  height: 150px;
+  left: 18%;
+  bottom: 18%;
+}
+
+.family-photo span {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  padding: 14px 16px;
+  color: var(--cream);
+  background: rgba(29, 23, 22, 0.78);
+  border-left: 6px solid var(--gold);
+  font-weight: 900;
+}
+
+.family-copy {
+  max-width: 760px;
 }
 
 .reviews-section {
@@ -581,6 +646,7 @@ a {
   .trust-band,
   .service-grid,
   .area-section,
+  .family-section,
   .split,
   .contact-section,
   .site-footer {
