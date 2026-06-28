@@ -4,6 +4,8 @@ Ask the owner for approval before using or publishing:
 
 - Slater Heating logo or brand marks.
 - Slater Heating logo from Facebook page/downloaded file - needs owner permission before public launch.
+- Slater Heating unstacked logo file (`assets/Untitled design - 3.png`) - needs owner permission before public launch.
+- Slater Heating stacked/wide logo file (`assets/Untitled design - 2.png`) - needs owner permission before public launch.
 - Logo usage needs owner permission before public launch.
 - Business-owned photos of vehicles, equipment, jobsites, shop space, or signage.
 - Any photos need owner permission before public launch.
