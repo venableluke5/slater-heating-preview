@@ -2,17 +2,20 @@
 
 Confirm these items with Slater Heating or a reliable public source before launch:
 
-- Official business name and preferred spelling.
-- Confirm official logo usage.
-- Confirm brand colors.
+- Confirm phone.
+- Confirm email.
+- Confirm hours.
+- Confirm service area.
+- Confirm services.
+- Confirm logo permission.
 - Confirm whether family-owned wording is accurate before using it.
+- Confirm Google Business Profile/review link.
+- Confirm permission to use as a portfolio example.
+- Official business name and preferred spelling.
+- Confirm brand colors.
 - Confirm the names, relationship, and preferred wording for any family-business section.
 - Whether the business is located in Eddington, Maine or serves Eddington from a nearby town.
-- Phone number.
-- Email address.
 - Mailing address or service address, if the owner wants it public.
-- Hours of operation.
-- Confirm whether this can be used publicly as a portfolio example.
 - Whether emergency, after-hours, or same-day service is offered.
 - Exact service categories offered:
   - Heating repair.
