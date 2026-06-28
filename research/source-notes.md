@@ -17,6 +17,9 @@ Date accessed: June 27, 2026.
   - No reliable public business profile was found in the accessible search results.
 - Web search: `"Slater Heating" Facebook`
   - No automated Facebook scraping was performed. No easily accessible public Facebook content was used.
+- Facebook share link provided by user: `https://www.facebook.com/share/1MT1be6GW1/?mibextid=wwXIfr`
+  - Not scraped or downloaded.
+  - Use manually only if the owner approves copying specific photo/copy details into the private concept.
 - Web search: `"Slater Heating" "LLC"` and related Maine/Eddington/Penobscot County variations
   - No reliable public business profile was found in the accessible search results.
 
