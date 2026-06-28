@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="top-notice">
-      Website concept for Slater Heating — prepared by ServiceSide Sites for review.
-    </div>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Slater Heating home">
         <img class="brand-logo" src="assets/slater-logo.jpg" alt="Slater Heating logo" />
@@ -30,26 +27,28 @@
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="heat-ring heat-ring-one" aria-hidden="true"></div>
-        <div class="heat-ring heat-ring-two" aria-hidden="true"></div>
         <div class="hero-content">
           <p class="eyebrow">Slater Heating</p>
-          <h1 id="hero-title">Heating help near Eddington, Maine</h1>
+          <h1 id="hero-title">Family-owned heating service for Eddington and the greater Bangor area</h1>
           <p class="hero-lede">
-            Straightforward heating service for homeowners in Eddington and the surrounding Bangor area.
+            Slater Heating helps local homeowners with heating repair, maintenance, furnace service,
+            boiler service, and straightforward answers when the heat is not keeping up.
           </p>
           <div class="hero-actions" aria-label="Primary calls to action">
             <a class="button button-primary" href="#contact">Call Slater Heating</a>
-            <a class="button button-secondary" href="#contact">Request service</a>
+            <a class="button button-secondary" href="#contact">Request Service</a>
           </div>
-          <p class="hero-note">
-            Built for local homeowners who want clear service information and an easy way to get in touch.
-          </p>
+          <ul class="trust-chips" aria-label="Slater Heating highlights">
+            <li>Local family business</li>
+            <li>Serving Eddington-area homes</li>
+            <li>Heating repair &amp; maintenance</li>
+            <li>Maine winter ready</li>
+          </ul>
         </div>
-        <aside class="hero-card" aria-label="Slater Heating quick contact panel">
+        <aside class="hero-panel" aria-label="Slater Heating quick service panel">
           <img src="assets/slater-logo.jpg" alt="Slater Heating logo" />
-          <div class="brand-stripe" aria-hidden="true"></div>
-          <p>Clear heating service information for nearby Maine homeowners.</p>
+          <div class="panel-divider" aria-hidden="true"></div>
+          <p>Heating service, maintenance, and comfort support for nearby Maine homes.</p>
         </aside>
       </section>
 
@@ -68,45 +67,64 @@
         </div>
       </section>
 
+      <section class="family-section" aria-labelledby="family-title">
+        <div class="family-visual" role="img" aria-label="Family and business photo placeholder">
+          <div class="flame-mark" aria-hidden="true"></div>
+          <span>Family &amp; business photo</span>
+        </div>
+        <div class="family-copy">
+          <p class="eyebrow">Local Family Business</p>
+          <h2 id="family-title">Built around neighbors, clear answers, and warm homes</h2>
+          <p>
+            A local heating business built on clear communication, honest service, and helping
+            neighbors stay warm through Maine winters.
+          </p>
+          <p>
+            This section is designed for an approved family or business photo so the finished site
+            can feel personal without relying on stock imagery.
+          </p>
+        </div>
+      </section>
+
       <section class="section" id="services" aria-labelledby="services-title">
         <div class="section-heading">
-          <p class="eyebrow">Services</p>
-          <h2 id="services-title">Heating service without the runaround</h2>
+          <p class="eyebrow">Heating Services</p>
+          <h2 id="services-title">Practical help for common heating needs</h2>
           <p>
-            From no-heat calls to seasonal upkeep, these service areas help homeowners find
-            the right place to start.
+            Clear service categories help homeowners understand what to ask for when a heating
+            system needs attention.
           </p>
         </div>
 
         <div class="service-grid">
           <article class="service-card">
-            <span class="service-icon" aria-hidden="true">R</span>
-            <h3>Heating repair</h3>
+            <span class="service-icon" aria-hidden="true">heat</span>
+            <h3>Heating Repair</h3>
             <p>Help when your heat is not keeping up, your system is making unusual noises, or something does not feel right.</p>
           </article>
           <article class="service-card">
-            <span class="service-icon" aria-hidden="true">I</span>
-            <h3>Heating installation</h3>
-            <p>Clear information for homeowners looking at heating replacement or installation options.</p>
-          </article>
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">F</span>
-            <h3>Furnace service</h3>
+            <span class="service-icon" aria-hidden="true">furnace</span>
+            <h3>Furnace Service</h3>
             <p>Seasonal furnace service language for common heating needs before and during winter.</p>
           </article>
           <article class="service-card">
-            <span class="service-icon" aria-hidden="true">B</span>
-            <h3>Boiler service</h3>
+            <span class="service-icon" aria-hidden="true">boiler</span>
+            <h3>Boiler Service</h3>
             <p>Simple boiler service information for heat, hot water, and home comfort questions.</p>
           </article>
           <article class="service-card">
-            <span class="service-icon" aria-hidden="true">M</span>
-            <h3>Maintenance</h3>
+            <span class="service-icon" aria-hidden="true">install</span>
+            <h3>Heating Installation</h3>
+            <p>Clear information for homeowners looking at heating replacement or installation options.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">tune</span>
+            <h3>Seasonal Maintenance</h3>
             <p>Routine maintenance messaging focused on avoiding surprises during cold weather.</p>
           </article>
           <article class="service-card">
-            <span class="service-icon" aria-hidden="true">H</span>
-            <h3>General HVAC help</h3>
+            <span class="service-icon" aria-hidden="true">help</span>
+            <h3>General HVAC Help</h3>
             <p>A simple starting point for homeowners who know something is wrong but are not sure what service they need.</p>
           </article>
         </div>
@@ -115,11 +133,12 @@
       <section class="area-section" id="area" aria-labelledby="area-title">
         <div class="area-copy">
           <p class="eyebrow">Service Area</p>
-          <h2 id="area-title">Serving homes around Eddington and Bangor</h2>
+          <h2 id="area-title">Centered around Eddington, serving nearby Bangor-area homes</h2>
           <p>
-            Based around the Eddington area, this concept highlights nearby service coverage for
-            Bangor-area homeowners.
+            This concept keeps Eddington at the center and shows nearby communities a local heating
+            business may serve.
           </p>
+          <p class="area-note">Exact service availability should be confirmed with the business before launch.</p>
         </div>
         <ul class="area-list" aria-label="Potential service area">
           <li>Eddington</li>
@@ -128,35 +147,39 @@
           <li>Holden</li>
           <li>Veazie</li>
           <li>Clifton</li>
+          <li>Bradley</li>
+          <li>Milford</li>
+          <li>Old Town</li>
         </ul>
-        <p class="area-note">Final towns served should be confirmed with the owner before launch.</p>
       </section>
 
       <section class="section split" id="about" aria-labelledby="about-title">
         <div>
-          <p class="eyebrow">About</p>
+          <p class="eyebrow">About Slater Heating</p>
           <h2 id="about-title">Local service, clear answers, warm homes</h2>
         </div>
         <div class="copy-stack">
           <p>
-            Slater Heating is presented here as a local heating service business focused on helping
-            nearby homeowners stay warm, comfortable, and informed. The finished site would keep
-            things simple: what services are offered, where service is available, and how customers
-            can quickly get in touch.
+            Slater Heating is a local, family-owned heating service business helping homeowners
+            around Eddington and the Bangor area keep their homes warm, safe, and comfortable.
+          </p>
+          <p>
+            The site keeps the message honest and service-focused: what Slater Heating can help
+            with, where service may be available, and how customers can quickly get in touch.
           </p>
           <p class="verification-note">
-            Owner story, family-owned wording, licensing, insurance, and years in business should be confirmed before launch.
+            Family-owned wording, licensing, insurance, years in business, and service details should be confirmed before launch.
           </p>
         </div>
       </section>
 
       <section class="reviews-section" aria-labelledby="reviews-title">
         <div class="reviews-content">
-          <p class="eyebrow">Trust</p>
-          <h2 id="reviews-title">Customer trust section</h2>
+          <p class="eyebrow">Customer Trust</p>
+          <h2 id="reviews-title">A place for verified reviews or owner-approved testimonials</h2>
           <p>
-            Once the owner confirms the correct Google Business Profile, this section can link visitors
-            to public reviews or feature owner-approved testimonials.
+            Once the owner confirms the correct Google Business Profile, this section can link
+            visitors to public reviews or feature approved customer testimonials.
           </p>
         </div>
       </section>
@@ -166,22 +189,24 @@
           <p class="eyebrow">Contact</p>
           <h2 id="contact-title">Need heating help?</h2>
           <p>
-            Use this section for the best phone number, email, hours, and preferred way customers should request service.
+            Use this section for the best phone number, email, hours, and preferred way customers
+            should request service.
           </p>
           <dl class="contact-list">
             <div>
               <dt>Phone</dt>
-              <dd>Add verified phone</dd>
+              <dd>Needs verification</dd>
             </div>
             <div>
               <dt>Email</dt>
-              <dd>Add verified email</dd>
+              <dd>Needs verification</dd>
             </div>
             <div>
               <dt>Hours</dt>
-              <dd>Add business hours</dd>
+              <dd>Needs verification</dd>
             </div>
           </dl>
+          <p class="preview-note">This is a preview mockup. Contact details should be confirmed before launch.</p>
         </div>
 
         <form class="mock-form" aria-label="Mock request service form">
@@ -194,11 +219,13 @@
             <input type="tel" name="phone" autocomplete="tel" placeholder="Best callback number" />
           </label>
           <label>
-            Service needed
+            Service Needed
             <select name="service">
               <option>Heating repair</option>
-              <option>Maintenance</option>
-              <option>Installation or replacement</option>
+              <option>Furnace service</option>
+              <option>Boiler service</option>
+              <option>Seasonal maintenance</option>
+              <option>Heating installation</option>
               <option>General HVAC help</option>
             </select>
           </label>
@@ -216,11 +243,10 @@
       <div>
         <strong>Slater Heating</strong>
         <span>Eddington and nearby Bangor-area communities</span>
-      </div>
-      <div>
-        <span>Concept by ServiceSide Sites</span>
+        <span>Phone: needs verification</span>
       </div>
       <p>Preview mockup only — not affiliated with Slater Heating unless approved.</p>
+      <small>Website concept by ServiceSide Sites</small>
     </footer>
 
     <script src="script.js"></script>
