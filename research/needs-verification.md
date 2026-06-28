@@ -28,7 +28,7 @@ Confirm these items with Slater Heating or a reliable public source before launc
 - Licensing, insurance, certifications, and any wording the owner is comfortable publishing.
 - Years in business or experience claims.
 - Whether the business is locally owned.
-- Service area and final town list, including Eddington, Bangor, Brewer, Holden, Veazie, Clifton, and any other nearby communities.
+- Service area and final town list, including Eddington, Bangor, Brewer, Holden, Veazie, Clifton, Bradley, Milford, Old Town, and any other nearby communities.
 - Google Business Profile link, rating, review count, and review-theme summary.
 - Whether the website should include online forms, direct email, phone-only calls, or another lead workflow.
 - Privacy/legal wording for the contact form.
