@@ -175,8 +175,29 @@ a {
 .hero-actions,
 .trust-chips,
 .hero-support,
+.hero-logo-lockup,
 .hero-panel {
   animation: heroFadeUp 620ms ease both;
+}
+
+.hero-logo-lockup {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 210px);
+  margin: 0 0 18px;
+  padding: 14px;
+  border: 1px solid rgba(247, 201, 72, 0.32);
+  border-radius: 4px;
+  background: rgba(31, 24, 23, 0.5);
+  box-shadow: 6px 6px 0 rgba(216, 95, 25, 0.18);
+}
+
+.hero-logo-lockup img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .hero h1 {
@@ -1105,6 +1126,12 @@ a {
   .hero-lede {
     margin-top: 16px;
     font-size: 1rem;
+  }
+
+  .hero-logo-lockup {
+    width: min(100%, 172px);
+    margin-bottom: 16px;
+    padding: 12px;
   }
 
   .trust-chips {
