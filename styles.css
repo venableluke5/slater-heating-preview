@@ -142,7 +142,7 @@ a {
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 420px);
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(28px, 6vw, 74px);
   align-items: center;
   overflow: hidden;
@@ -174,6 +174,7 @@ a {
 .hero-lede,
 .hero-actions,
 .trust-chips,
+.hero-support,
 .hero-panel {
   animation: heroFadeUp 620ms ease both;
 }
@@ -192,6 +193,10 @@ a {
 
 .trust-chips {
   animation-delay: 330ms;
+}
+
+.hero-support {
+  animation-delay: 390ms;
 }
 
 .hero-panel {
@@ -303,6 +308,38 @@ a {
   background: rgba(31, 24, 23, 0.46);
   font-size: 0.92rem;
   font-weight: 900;
+}
+
+.hero-support {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.hero-support div {
+  min-height: 112px;
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(247, 201, 72, 0.32);
+  border-radius: 4px;
+  background: rgba(31, 24, 23, 0.44);
+}
+
+.hero-support strong,
+.hero-support span {
+  display: block;
+}
+
+.hero-support strong {
+  color: var(--cream);
+  font-size: 0.98rem;
+  font-family: "Arial Black", "Trebuchet MS", Arial, sans-serif;
+}
+
+.hero-support span {
+  margin-top: 8px;
+  color: #f4dec4;
+  font-size: 0.96rem;
 }
 
 .hero-panel {
@@ -933,7 +970,8 @@ a {
   .area-section,
   .split,
   .testimonial-grid,
-  .contact-section {
+  .contact-section,
+  .hero-support {
     grid-template-columns: 1fr;
   }
 
