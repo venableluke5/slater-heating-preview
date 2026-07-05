@@ -20,7 +20,7 @@
   --color-white: #ffffff;
 
   --font-body: "Segoe UI", "Aptos", sans-serif;
-  --font-heading: "Georgia", "Times New Roman", serif;
+  --font-heading: "Aptos Display", "Segoe UI", sans-serif;
 
   --space-1: 0.5rem;
   --space-2: 0.75rem;
@@ -58,7 +58,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  padding-bottom: 5.5rem;
+  padding-bottom: 6.75rem;
   color: var(--color-white);
   font-family: var(--font-body);
   line-height: 1.6;
@@ -94,7 +94,8 @@ h2,
 h3 {
   color: var(--color-ink);
   font-family: var(--font-heading);
-  line-height: 1.08;
+  font-weight: 900;
+  line-height: 1.02;
   letter-spacing: 0;
   text-wrap: balance;
 }
@@ -290,7 +291,7 @@ textarea {
 .hero-shell {
   position: relative;
   overflow: hidden;
-  padding: var(--space-6) 0 var(--space-5);
+  padding: var(--space-5) 0 var(--space-4);
 }
 
 .hero-shell::before {
@@ -326,47 +327,47 @@ textarea {
 }
 
 .hero-content h1 {
-  max-width: 8ch;
+  max-width: 13ch;
   color: var(--color-white);
-  font-size: clamp(2.45rem, 10.5vw, 5rem);
+  font-size: 2.3rem;
 }
 
 .hero-lead {
-  max-width: 40rem;
+  max-width: 36rem;
   margin-top: var(--space-3);
   color: rgba(255, 255, 255, 0.85);
-  font-size: 1.06rem;
+  font-size: 1rem;
 }
 
 .hero-actions {
   display: grid;
   gap: var(--space-2);
-  margin-top: var(--space-4);
+  margin-top: var(--space-3);
 }
 
 .hero-trust-list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
-  margin-top: var(--space-4);
+  margin-top: var(--space-3);
   padding: 0;
   list-style: none;
 }
 
 .hero-trust-list li {
-  padding: 0.65rem 0.85rem;
+  padding: 0.55rem 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius-sm);
   background: rgba(255, 255, 255, 0.09);
   color: rgba(255, 255, 255, 0.88);
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   font-weight: 800;
 }
 
 .hero-contact-strip {
-  display: grid;
+  display: none;
   gap: var(--space-2);
-  margin-top: var(--space-4);
+  margin-top: var(--space-3);
 }
 
 .hero-contact-strip div {
@@ -394,7 +395,7 @@ textarea {
 }
 
 .hero-visual {
-  display: grid;
+  display: none;
   gap: var(--space-3);
 }
 
@@ -412,7 +413,7 @@ textarea {
   transform: rotate(-1deg);
 }
 
-.photo-placeholder {
+.branded-visual {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -421,11 +422,17 @@ textarea {
   gap: var(--space-2);
   padding: var(--space-4);
   background:
-    linear-gradient(160deg, rgba(242, 109, 33, 0.9) 0 30%, transparent 30%),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.03));
+    linear-gradient(155deg, rgba(242, 109, 33, 0.94) 0 24%, transparent 24%),
+    radial-gradient(circle at 78% 18%, rgba(255, 184, 74, 0.18), transparent 26%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03)),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.07) 0 1px,
+      transparent 1px 18px
+    );
 }
 
-.photo-placeholder span {
+.branded-visual span {
   width: fit-content;
   padding: 0.45rem 0.7rem;
   border-radius: var(--radius-sm);
@@ -437,15 +444,15 @@ textarea {
   text-transform: uppercase;
 }
 
-.photo-placeholder strong {
+.branded-visual strong {
   max-width: 18rem;
   color: var(--color-white);
   font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-size: 1.55rem;
   line-height: 1.1;
 }
 
-.photo-placeholder p {
+.branded-visual p {
   max-width: 17rem;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -525,7 +532,7 @@ textarea {
 }
 
 .section {
-  padding: var(--space-7) 0;
+  padding: var(--space-6) 0;
 }
 
 .section-heading {
@@ -536,7 +543,7 @@ textarea {
 .work-heading h2,
 .contact-copy h2 {
   color: var(--color-white);
-  font-size: clamp(2.25rem, 8vw, 4rem);
+  font-size: 2.35rem;
 }
 
 .section-heading p,
@@ -564,7 +571,7 @@ textarea {
 .service-grid {
   display: grid;
   gap: var(--space-3);
-  margin-top: var(--space-5);
+  margin-top: var(--space-4);
 }
 
 .service-card {
@@ -587,7 +594,7 @@ textarea {
 
 .service-media {
   display: flex;
-  min-height: 8.5rem;
+  min-height: 6.5rem;
   align-items: end;
   padding: var(--space-3);
   background:
@@ -622,16 +629,11 @@ textarea {
   background-color: #ccd8dc;
 }
 
-.service-media-placeholder {
-  background-color: #ece4da;
-}
-
 .service-body {
-  padding: var(--space-4);
+  padding: var(--space-3);
 }
 
-.card-label,
-.placeholder-label {
+.card-label {
   margin-bottom: var(--space-2);
   color: var(--color-orange-deep);
   font-size: 0.78rem;
@@ -641,19 +643,16 @@ textarea {
 }
 
 .service-card h3 {
-  font-size: 1.55rem;
+  font-size: 1.35rem;
 }
 
 .service-card p:not(.card-label) {
   margin-top: var(--space-2);
 }
 
-.service-card-placeholder {
-  border-style: dashed;
-}
-
 .service-points {
   color: var(--color-ink-soft);
+  font-size: 0.95rem;
 }
 
 .services-followup {
@@ -745,7 +744,7 @@ textarea {
 .work-grid {
   display: grid;
   gap: var(--space-3);
-  margin-top: var(--space-5);
+  margin-top: var(--space-4);
 }
 
 .work-card {
@@ -773,7 +772,7 @@ textarea {
 
 .work-photo {
   display: grid;
-  min-height: 13rem;
+  min-height: 12rem;
   place-items: end start;
   padding: var(--space-3);
   color: var(--color-white);
@@ -788,7 +787,7 @@ textarea {
 }
 
 .furnace-photo {
-  min-height: 18rem;
+  min-height: 16rem;
   background-color: #364c58;
 }
 
@@ -814,9 +813,10 @@ textarea {
   margin-top: var(--space-5);
 }
 
-.review-card {
+.review-card,
+.proof-card {
   padding: var(--space-4);
-  border: 1px dashed rgba(242, 109, 33, 0.45);
+  border: 1px solid rgba(242, 109, 33, 0.22);
   border-radius: var(--radius-md);
   background: #fff7ed;
 }
@@ -825,6 +825,15 @@ textarea {
   margin-top: var(--space-3);
   color: var(--color-ink);
   font-weight: 900;
+}
+
+.proof-card h3 {
+  font-size: 1.35rem;
+}
+
+.proof-card p:not(.card-label) {
+  color: var(--color-muted);
+  margin-top: var(--space-2);
 }
 
 .section-area {
@@ -1182,6 +1191,10 @@ textarea {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .hero-contact-strip {
+    display: grid;
+  }
+
   .button-large {
     width: auto;
   }
@@ -1210,6 +1223,10 @@ textarea {
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   }
 
+  .hero-visual {
+    display: grid;
+  }
+
   .work-heading {
     grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
   }
@@ -1223,7 +1240,7 @@ textarea {
   }
 
   .work-card-large .work-photo {
-    min-height: 30rem;
+    min-height: 24rem;
   }
 
   .footer-grid {
@@ -1254,12 +1271,18 @@ textarea {
   }
 
   .hero-shell {
-    padding: var(--space-8) 0 var(--space-7);
+    padding: var(--space-6) 0 var(--space-5);
   }
 
   .hero-content h1 {
-    max-width: 10ch;
-    font-size: clamp(3.6rem, 6vw, 5.1rem);
+    max-width: 12ch;
+    font-size: 4.1rem;
+  }
+
+  .section-heading h2,
+  .work-heading h2,
+  .contact-copy h2 {
+    font-size: 3.35rem;
   }
 
   .photo-frame {
@@ -1271,7 +1294,7 @@ textarea {
   }
 
   .service-grid {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .review-grid {
