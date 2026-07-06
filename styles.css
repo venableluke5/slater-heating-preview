@@ -41,7 +41,7 @@
   --shadow-strong: 0 28px 70px rgba(16, 35, 47, 0.22);
 
   --container: 1160px;
-  --header-height: 96px;
+  --header-height: 76px;
 }
 
 *,
@@ -161,7 +161,7 @@ textarea {
 }
 
 .brand-logo {
-  width: min(240px, 58vw);
+  width: min(210px, 48vw);
   height: auto;
 }
 
@@ -416,6 +416,15 @@ textarea {
   transform: none;
 }
 
+.logo-frame {
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.25rem, 6vw, 2.75rem);
+  background:
+    radial-gradient(circle at 50% 35%, rgba(242, 109, 33, 0.18), transparent 42%),
+    linear-gradient(135deg, #100c0b, #2b211f);
+}
+
 .hero-photo,
 .service-media img,
 .before-after img {
@@ -427,6 +436,12 @@ textarea {
 
 .hero-photo {
   object-position: center;
+}
+
+.hero-logo {
+  width: min(100%, 420px);
+  height: 100%;
+  object-fit: contain;
 }
 
 .hero-service-panel {
