@@ -1131,6 +1131,11 @@ textarea {
   margin-bottom: 0;
 }
 
+.form-status {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
 .form-note {
   color: var(--color-muted);
   font-size: 0.92rem;

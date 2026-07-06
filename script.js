@@ -2,7 +2,6 @@ const menuToggle = document.querySelector("[data-menu-toggle]");
 const siteNav = document.querySelector("[data-site-nav]");
 const yearTarget = document.querySelector("[data-current-year]");
 const revealItems = document.querySelectorAll("[data-reveal]");
-const faqButtons = document.querySelectorAll("[data-faq-toggle]");
 
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
@@ -31,24 +30,6 @@ if (menuToggle && siteNav) {
     }
   });
 }
-
-faqButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const answer = button.nextElementSibling;
-    const icon = button.querySelector(".faq-icon");
-    const isOpen = button.getAttribute("aria-expanded") === "true";
-
-    button.setAttribute("aria-expanded", String(!isOpen));
-
-    if (answer) {
-      answer.hidden = isOpen;
-    }
-
-    if (icon) {
-      icon.textContent = isOpen ? "+" : "-";
-    }
-  });
-});
 
 if (revealItems.length) {
   const revealObserver = new IntersectionObserver(

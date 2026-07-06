@@ -7,6 +7,7 @@
       name="description"
       content="Slater Heating in Eddington, Maine offers heating service, cleanings, and installations for oil, propane, and natural gas systems."
     />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Slater Heating | Heating Service in Eddington, ME</title>
     <link rel="stylesheet" href="styles.css?v=20260706-5" />
   </head>
@@ -38,7 +39,6 @@
           <a href="#why">Why Slater</a>
           <a href="#work">Work</a>
           <a href="#area">Location</a>
-          <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -376,14 +376,9 @@
               <p>Long field experience supports the owner-operated, straightforward tone of the site.</p>
             </article>
             <article class="proof-card reveal" data-reveal>
-              <p class="card-label">Visibility</p>
-              <h3>Facebook presence</h3>
-              <p>Active local Facebook activity gives homeowners one more way to see recent service work.</p>
-            </article>
-            <article class="proof-card reveal" data-reveal>
-              <p class="card-label">Next step</p>
-              <h3>Review links can be added</h3>
-              <p>Google and Facebook review links can be added once the final set is approved.</p>
+              <p class="card-label">Credentials</p>
+              <h3>Licensed and insured</h3>
+              <p>Confirmed credentials help reinforce the practical, trustworthy tone of the site.</p>
             </article>
           </div>
         </div>
@@ -409,83 +404,6 @@
             <p class="area-note">
               Nearby service areas can be finalized once the coverage list is confirmed.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ: keep unknown details cautious until confirmed. -->
-      <section class="section section-faq" id="faq">
-        <div class="container faq-grid">
-          <div class="section-heading reveal" data-reveal>
-            <p class="section-kicker">FAQ</p>
-            <h2>Common questions before calling for heating service.</h2>
-          </div>
-
-          <div class="faq-list" data-faq-list>
-            <article class="faq-item reveal" data-reveal>
-              <button class="faq-question" type="button" aria-expanded="false" data-faq-toggle>
-                <span>What heating services do you offer?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="faq-answer" hidden>
-                <p>
-                  Slater Heating handles heating service, cleanings, installations, oil burner
-                  service, heat pump cleaning, and heater repair.
-                </p>
-              </div>
-            </article>
-
-            <article class="faq-item reveal" data-reveal>
-              <button class="faq-question" type="button" aria-expanded="false" data-faq-toggle>
-                <span>Do you provide free estimates?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="faq-answer" hidden>
-                <p>
-                  Call or send a request with the details of the job and Slater Heating can explain
-                  the next step.
-                </p>
-              </div>
-            </article>
-
-            <article class="faq-item reveal" data-reveal>
-              <button class="faq-question" type="button" aria-expanded="false" data-faq-toggle>
-                <span>What areas do you serve?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="faq-answer" hidden>
-                <p>
-                  Slater Heating is based in Eddington, Maine. Nearby service areas can be finalized
-                  once the coverage list is confirmed.
-                </p>
-              </div>
-            </article>
-
-            <article class="faq-item reveal" data-reveal>
-              <button class="faq-question" type="button" aria-expanded="false" data-faq-toggle>
-                <span>How soon can I schedule service?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="faq-answer" hidden>
-                <p>
-                  Availability can vary by season. Calling is the fastest way to ask about
-                  scheduling.
-                </p>
-              </div>
-            </article>
-
-            <article class="faq-item reveal" data-reveal>
-              <button class="faq-question" type="button" aria-expanded="false" data-faq-toggle>
-                <span>Do you offer maintenance?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="faq-answer" hidden>
-                <p>
-                  Yes. Service and cleanings are part of the confirmed offering, including heat pump
-                  cleaning and seasonal heating system care.
-                </p>
-              </div>
-            </article>
           </div>
         </div>
       </section>
@@ -540,13 +458,13 @@
             <div class="form-card-header">
               <p class="card-label">Request form</p>
               <h3>Prefer to send a message first?</h3>
-              <p>Share the basics below and Slater Heating can follow up with the next step.</p>
+              <p>Use the fields below to show the kind of information the request form can collect.</p>
             </div>
-            <form action="#" method="post" class="contact-form" id="contact-form">
+            <form action="#" method="post" class="contact-form" id="contact-form" novalidate>
               <div class="form-row">
                 <div class="field">
                   <label for="name">Name</label>
-                  <input id="name" name="name" type="text" autocomplete="name" required />
+                  <input id="name" name="name" type="text" autocomplete="name" />
                 </div>
                 <div class="field">
                   <label for="phone">Phone</label>
@@ -557,7 +475,7 @@
               <div class="form-row">
                 <div class="field">
                   <label for="email">Email</label>
-                  <input id="email" name="email" type="email" autocomplete="email" required />
+                  <input id="email" name="email" type="email" autocomplete="email" />
                 </div>
                 <div class="field">
                   <label for="service">Service needed</label>
@@ -598,7 +516,6 @@
                   name="message"
                   rows="5"
                   placeholder="Tell us what heating help you need, where the property is, and the best way to reach you."
-                  required
                 ></textarea>
               </div>
 
@@ -610,7 +527,10 @@
                 </ul>
               </div>
 
-              <button class="button button-primary" type="submit">Send Request</button>
+              <p class="form-status">
+                Call for the fastest response while online request sending is finalized.
+              </p>
+              <a class="button button-primary" href="tel:2072996895">Call Now</a>
             </form>
           </div>
         </div>
