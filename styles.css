@@ -41,7 +41,7 @@
   --shadow-strong: 0 28px 70px rgba(16, 35, 47, 0.22);
 
   --container: 1160px;
-  --header-height: 76px;
+  --header-height: 96px;
 }
 
 *,
@@ -161,7 +161,7 @@ textarea {
 }
 
 .brand-logo {
-  width: min(210px, 48vw);
+  width: min(240px, 58vw);
   height: auto;
 }
 
