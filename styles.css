@@ -309,7 +309,7 @@ textarea {
   position: relative;
   z-index: 1;
   display: grid;
-  gap: var(--space-5);
+  gap: var(--space-4);
 }
 
 .section-kicker {
@@ -340,6 +340,10 @@ textarea {
   display: grid;
   gap: var(--space-2);
   margin-top: var(--space-3);
+}
+
+.hero-actions .button-secondary {
+  display: none;
 }
 
 .hero-trust-list {
@@ -392,13 +396,15 @@ textarea {
 }
 
 .hero-visual {
-  display: none;
+  display: grid;
   gap: var(--space-3);
+  order: -1;
 }
 
 .photo-frame {
   display: flex;
-  min-height: 15rem;
+  aspect-ratio: 16 / 9;
+  min-height: 10.5rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius-lg);
   background: rgba(255, 255, 255, 0.08);
@@ -407,54 +413,24 @@ textarea {
 }
 
 .photo-frame-main {
-  transform: rotate(-1deg);
+  transform: none;
 }
 
-.branded-visual {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: inherit;
-  gap: var(--space-2);
-  padding: var(--space-4);
-  background:
-    linear-gradient(155deg, rgba(242, 109, 33, 0.94) 0 24%, transparent 24%),
-    radial-gradient(circle at 78% 18%, rgba(255, 184, 74, 0.18), transparent 26%),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03)),
-    repeating-linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.07) 0 1px,
-      transparent 1px 18px
-    );
+.hero-photo,
+.service-media img,
+.before-after img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.branded-visual span {
-  width: fit-content;
-  padding: 0.45rem 0.7rem;
-  border-radius: var(--radius-sm);
-  background: rgba(16, 12, 11, 0.82);
-  color: var(--color-white);
-  font-size: 0.78rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.branded-visual strong {
-  max-width: 18rem;
-  color: var(--color-white);
-  font-family: var(--font-heading);
-  font-size: 1.55rem;
-  line-height: 1.1;
-}
-
-.branded-visual p {
-  max-width: 17rem;
-  color: rgba(255, 255, 255, 0.8);
+.hero-photo {
+  object-position: center;
 }
 
 .hero-service-panel {
+  display: none;
   padding: var(--space-4);
   border-radius: var(--radius-lg);
   background: #fff5e9;
@@ -590,15 +566,32 @@ textarea {
 }
 
 .service-media {
+  position: relative;
   display: flex;
-  min-height: 6.5rem;
+  aspect-ratio: 4 / 3;
+  min-height: 8.75rem;
   align-items: end;
   padding: var(--space-3);
-  background:
-    linear-gradient(135deg, rgba(242, 109, 33, 0.16), rgba(20, 41, 54, 0.04));
+  background: var(--color-card-dark);
+  overflow: hidden;
+}
+
+.service-media img {
+  position: absolute;
+  inset: 0;
+}
+
+.service-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, rgba(16, 12, 11, 0.68));
+  pointer-events: none;
 }
 
 .service-media span {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   min-height: 2rem;
@@ -624,6 +617,10 @@ textarea {
 
 .service-media-replace {
   background-color: #ccd8dc;
+}
+
+.service-media-water {
+  background-color: #d6c1aa;
 }
 
 .service-body {
@@ -728,6 +725,32 @@ textarea {
   font-size: 1.35rem;
 }
 
+.why-photo {
+  margin-top: var(--space-4);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.why-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 11;
+  max-height: 18rem;
+  object-fit: cover;
+  object-position: center 48%;
+}
+
+.why-photo figcaption {
+  padding: 0.9rem 1rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
 .section-work {
   background: var(--color-brown-black);
 }
@@ -768,36 +791,41 @@ textarea {
 }
 
 .work-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--color-card-dark);
+}
+
+.before-after {
   display: grid;
-  min-height: 12rem;
-  place-items: end start;
-  padding: var(--space-3);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--color-line);
+}
+
+.before-after figure {
+  position: relative;
+  min-height: 13rem;
+  margin: 0;
+  background: var(--color-card-dark);
+  overflow: hidden;
+}
+
+.before-after figcaption {
+  position: absolute;
+  left: var(--space-2);
+  bottom: var(--space-2);
+  padding: 0.35rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 12, 11, 0.82);
   color: var(--color-white);
+  font-size: 0.75rem;
   font-weight: 900;
-  background:
-    linear-gradient(145deg, rgba(16, 35, 47, 0.08), rgba(16, 35, 47, 0.72)),
-    repeating-linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.18) 0 2px,
-      transparent 2px 18px
-    );
-}
-
-.furnace-photo {
-  min-height: 16rem;
-  background-color: #364c58;
-}
-
-.equipment-photo {
-  background-color: #c95f21;
-}
-
-.truck-photo {
-  background-color: #203f50;
-}
-
-.team-photo {
-  background-color: #b88942;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .section-reviews {
@@ -1192,6 +1220,10 @@ textarea {
     display: grid;
   }
 
+  .hero-actions .button-secondary {
+    display: inline-flex;
+  }
+
   .hero-trust-list {
     display: flex;
   }
@@ -1223,9 +1255,20 @@ textarea {
   .contact-grid {
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   }
+  .photo-frame-main {
+    transform: rotate(-1deg);
+  }
+
+  .photo-frame {
+    aspect-ratio: 4 / 3;
+  }
 
   .hero-visual {
-    display: grid;
+    order: 0;
+  }
+
+  .hero-service-panel {
+    display: block;
   }
 
   .work-heading {
@@ -1233,15 +1276,15 @@ textarea {
   }
 
   .work-grid {
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .work-card-large {
-    grid-row: span 2;
+    grid-column: 1 / -1;
   }
 
-  .work-card-large .work-photo {
-    min-height: 24rem;
+  .work-card-large .before-after figure {
+    min-height: 18rem;
   }
 
   .footer-grid {
@@ -1295,7 +1338,7 @@ textarea {
   }
 
   .service-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .review-grid {

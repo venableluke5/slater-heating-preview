@@ -50,7 +50,6 @@
     </header>
 
     <main id="main-content">
-      <!-- TODO before launch: replace the branded visual with a real Slater Heating work, truck, or equipment photo. -->
       <section class="hero-section" id="top">
         <div class="hero-shell">
           <div class="container hero-grid">
@@ -88,11 +87,12 @@
 
             <div class="hero-visual reveal" data-reveal>
               <div class="photo-frame photo-frame-main">
-                <div class="branded-visual">
-                  <span>Slater Heating</span>
-                  <strong>Oil, propane, natural gas, and heat pump service</strong>
-                  <p>Based in Eddington, Maine</p>
-                </div>
+                <img
+                  src="images/slater-AC-working.jpg"
+                  alt="Technician working on outdoor air conditioning equipment at a home"
+                  class="hero-photo"
+                  fetchpriority="high"
+                />
               </div>
 
               <aside class="hero-service-panel" aria-label="Quick service summary">
@@ -148,28 +148,27 @@
           <div class="service-grid">
             <article class="service-card reveal" data-reveal>
               <div class="service-media service-media-repair">
-                <span>Oil systems</span>
+                <img
+                  src="images/slater-AC.jpg"
+                  alt="Outdoor air conditioning equipment beside a home"
+                  loading="lazy"
+                />
+                <span>Cooling / AC</span>
               </div>
               <div class="service-body">
-                <p class="card-label">Service</p>
-                <h3>Oil Burner Service</h3>
-                <p>Service and troubleshooting for oil heating systems.</p>
+                <p class="card-label">Cooling</p>
+                <h3>Cooling / AC</h3>
+                <p>Air conditioning work listed among Slater Heating services.</p>
               </div>
             </article>
 
             <article class="service-card reveal" data-reveal>
               <div class="service-media service-media-install">
-                <span>Repairs</span>
-              </div>
-              <div class="service-body">
-                <p class="card-label">Repair</p>
-                <h3>Heating Repair</h3>
-                <p>Help when heat is weak, uneven, or not working as expected.</p>
-              </div>
-            </article>
-
-            <article class="service-card reveal" data-reveal>
-              <div class="service-media service-media-maintenance">
+                <img
+                  src="images/slater-heatpump-cleanings.jpg"
+                  alt="Technician cleaning an indoor heat pump unit"
+                  loading="lazy"
+                />
                 <span>Heat pumps</span>
               </div>
               <div class="service-body">
@@ -180,13 +179,50 @@
             </article>
 
             <article class="service-card reveal" data-reveal>
-              <div class="service-media service-media-replace">
-                <span>Installs</span>
+              <div class="service-media service-media-maintenance">
+                <img
+                  src="images/slater-boiler-wallmount.jpg"
+                  alt="Wall-mounted boiler and heating system equipment"
+                  loading="lazy"
+                />
+                <span>Boilers</span>
               </div>
               <div class="service-body">
-                <p class="card-label">Install</p>
-                <h3>Heating Installations</h3>
-                <p>Installation support for oil, propane, and natural gas systems.</p>
+                <p class="card-label">Heating</p>
+                <h3>Boiler Service</h3>
+                <p>Service support for boiler and heating system equipment.</p>
+              </div>
+            </article>
+
+            <article class="service-card reveal" data-reveal>
+              <div class="service-media service-media-replace">
+                <img
+                  src="images/slater-oil-tank.jpg"
+                  alt="Oil tank and heating system piping"
+                  loading="lazy"
+                />
+                <span>Oil systems</span>
+              </div>
+              <div class="service-body">
+                <p class="card-label">Systems</p>
+                <h3>Oil Tank / Heating Systems</h3>
+                <p>Work around oil heating systems and related equipment.</p>
+              </div>
+            </article>
+
+            <article class="service-card reveal" data-reveal>
+              <div class="service-media service-media-water">
+                <img
+                  src="images/slater-watertank.jpg"
+                  alt="Water tank and connected mechanical system"
+                  loading="lazy"
+                />
+                <span>System work</span>
+              </div>
+              <div class="service-body">
+                <p class="card-label">Mechanical</p>
+                <h3>Water Tank / System Work</h3>
+                <p>Mechanical system work connected to home comfort equipment.</p>
               </div>
             </article>
           </div>
@@ -208,6 +244,14 @@
               Work directly with a local owner-operator who understands oil, propane, natural gas,
               and heat pump service.
             </p>
+            <figure class="why-photo reveal" data-reveal>
+              <img
+                src="images/slater-family-pic.jpg"
+                alt="Slater family portrait outdoors in autumn"
+                loading="lazy"
+              />
+              <figcaption>Local, owner-operated heating service based in Eddington.</figcaption>
+            </figure>
           </div>
 
           <div class="why-list">
@@ -240,7 +284,6 @@
         </div>
       </section>
 
-      <!-- TODO before launch: add real Slater Heating work, truck, equipment, or service photos. -->
       <section class="section section-work" id="work">
         <div class="container">
           <div class="work-heading reveal" data-reveal>
@@ -256,19 +299,66 @@
 
           <div class="work-grid">
             <article class="work-card work-card-large reveal" data-reveal>
-              <div class="work-photo furnace-photo" aria-hidden="true"></div>
-              <h3>Heating system service</h3>
-              <p>Oil burner, heater repair, and system service work for local properties.</p>
+              <div class="before-after">
+                <figure>
+                  <img
+                    src="images/slater-boiler-before.jpg"
+                    alt="Boiler system before service work"
+                    loading="lazy"
+                  />
+                  <figcaption>Before</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="images/slater-boiler-after.jpg"
+                    alt="Boiler system after service work"
+                    loading="lazy"
+                  />
+                  <figcaption>After</figcaption>
+                </figure>
+              </div>
+              <h3>Boiler before and after</h3>
+              <p>A real project photo pair showing boiler system work.</p>
             </article>
             <article class="work-card reveal" data-reveal>
-              <div class="work-photo equipment-photo" aria-hidden="true"></div>
-              <h3>Heating equipment</h3>
-              <p>Service focused on oil, propane, natural gas, and heat pump systems.</p>
+              <img
+                src="images/slater-boiler.jpg"
+                alt="Boiler and heating system equipment"
+                class="work-photo"
+                loading="lazy"
+              />
+              <h3>Boiler equipment</h3>
+              <p>Heating system equipment from a Slater Heating job.</p>
             </article>
             <article class="work-card reveal" data-reveal>
-              <div class="work-photo truck-photo" aria-hidden="true"></div>
-              <h3>Local service calls</h3>
-              <p>Owner-operated heating help from a shop based in Eddington, Maine.</p>
+              <img
+                src="images/slater-boiler-wallmount.jpg"
+                alt="Wall-mounted heating system equipment"
+                class="work-photo"
+                loading="lazy"
+              />
+              <h3>Wall-mounted system</h3>
+              <p>Heating equipment installation and service work.</p>
+            </article>
+            <article class="work-card reveal" data-reveal>
+              <img
+                src="images/slater-oil-tank.jpg"
+                alt="Oil tank connected to heating system piping"
+                class="work-photo"
+                loading="lazy"
+              />
+              <h3>Oil system work</h3>
+              <p>Oil heating equipment and related system work.</p>
+            </article>
+            <article class="work-card reveal" data-reveal>
+              <img
+                src="images/slater-watertank.jpg"
+                alt="Water tank and home mechanical equipment"
+                class="work-photo"
+                loading="lazy"
+              />
+              <h3>Mechanical systems</h3>
+              <p>Water tank and connected home comfort equipment.</p>
             </article>
           </div>
         </div>
