@@ -890,10 +890,18 @@ textarea {
 .review-stars {
   position: relative;
   z-index: 2;
+  display: inline-flex;
+  gap: 0;
   color: var(--color-orange);
   font-size: 1.05rem;
   line-height: 1;
   letter-spacing: 0;
+}
+
+.review-stars span {
+  display: inline-block;
+  color: var(--color-orange);
+  line-height: 1;
 }
 
 .review-card footer {
