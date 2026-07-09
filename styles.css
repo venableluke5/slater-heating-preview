@@ -338,10 +338,18 @@ textarea {
   font-size: 0.95rem;
 }
 
+.hero-trust-sentence {
+  max-width: 34rem;
+  margin-top: 0.7rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
 .hero-actions {
   display: grid;
   gap: 0.65rem;
-  margin-top: 0.9rem;
+  margin-top: 0.8rem;
   max-width: 17rem;
 }
 
@@ -359,24 +367,11 @@ textarea {
   color: var(--color-white);
 }
 
-.hero-direct-line {
-  max-width: 33rem;
-  margin-top: 0.75rem;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 0.88rem;
-}
-
-.hero-direct-line a {
-  color: var(--color-white);
-  font-weight: 900;
-  text-decoration: none;
-}
-
 .hero-trust-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.6rem;
-  margin-top: 0.8rem;
+  margin-top: 0.75rem;
   padding: 0;
   list-style: none;
 }
@@ -861,10 +856,63 @@ textarea {
   background: #fff7ed;
 }
 
+.review-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-content: start;
+  gap: 0.9rem;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.review-card p {
+  position: relative;
+  z-index: 1;
+  color: var(--color-muted);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.review-card::before {
+  content: "\201C";
+  position: absolute;
+  top: 2.1rem;
+  left: 1.05rem;
+  z-index: 0;
+  color: rgba(242, 109, 33, 0.16);
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.review-stars {
+  position: relative;
+  z-index: 2;
+  color: var(--color-orange);
+  font-size: 1.05rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
 .review-card footer {
-  margin-top: var(--space-3);
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.2rem;
+  margin-top: var(--space-2);
+}
+
+.review-card footer strong {
   color: var(--color-ink);
   font-weight: 900;
+}
+
+.review-card footer span {
+  color: rgba(34, 51, 68, 0.62);
+  font-size: 0.82rem;
+  font-weight: 700;
 }
 
 .proof-card h3 {
@@ -1012,6 +1060,7 @@ textarea {
   display: grid;
   gap: var(--space-2);
   margin-top: var(--space-3);
+  max-width: 17rem;
 }
 
 .contact-priority {
@@ -1290,9 +1339,7 @@ body.show-mobile-cta .mobile-cta {
 }
 
 @media (min-width: 640px) {
-  .hero-actions,
-  .form-row,
-  .contact-actions {
+  .form-row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1428,7 +1475,7 @@ body.show-mobile-cta .mobile-cta {
   }
 
   .review-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .proof-card-feature {
