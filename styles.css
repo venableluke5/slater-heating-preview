@@ -327,7 +327,7 @@ textarea {
 .hero-content h1 {
   max-width: 12.8ch;
   color: var(--color-white);
-  font-size: 2.05rem;
+  font-size: 2.22rem;
   line-height: 1;
 }
 
@@ -477,30 +477,29 @@ textarea {
 }
 
 .trust-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.7rem;
-  padding: 1rem 0 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.2rem;
+  padding: 0.88rem 0;
 }
 
 .trust-grid div {
-  display: grid;
-  gap: 0.35rem;
-  padding: 0.72rem 0.78rem;
-  border: 1px solid rgba(255, 210, 160, 0.12);
-  border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.05);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
 }
 
-.trust-grid span {
-  color: rgba(242, 109, 33, 0.88);
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
+.trust-grid div::before {
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: var(--color-orange);
+  content: "";
 }
 
 .trust-grid strong {
-  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
   line-height: 1.25;
 }
 
@@ -516,7 +515,8 @@ textarea {
 .work-heading h2,
 .contact-copy h2 {
   color: var(--color-white);
-  font-size: 2.35rem;
+  font-size: 2rem;
+  line-height: 1.06;
 }
 
 .section-heading p,
@@ -537,8 +537,18 @@ textarea {
 
 .section-services {
   background:
-    linear-gradient(180deg, rgba(255, 184, 74, 0.06), transparent 18%),
-    var(--color-night-soft);
+    linear-gradient(180deg, rgba(255, 184, 74, 0.12), transparent 24%),
+    var(--color-cream);
+}
+
+.section-services .section-heading h2,
+.section-reviews .section-heading h2 {
+  color: var(--color-ink);
+}
+
+.section-services .section-heading p,
+.section-reviews .section-heading p {
+  color: var(--color-muted);
 }
 
 .service-grid {
@@ -550,7 +560,7 @@ textarea {
 .service-card {
   border: 1px solid var(--color-line);
   border-radius: var(--radius-lg);
-  background: #fff7ed;
+  background: var(--color-paper);
   box-shadow: var(--shadow-soft);
   overflow: hidden;
   transition:
@@ -585,22 +595,8 @@ textarea {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 35%, rgba(16, 12, 11, 0.68));
+  background: linear-gradient(180deg, transparent 58%, rgba(16, 12, 11, 0.12));
   pointer-events: none;
-}
-
-.service-media span {
-  position: relative;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  min-height: 2rem;
-  padding: 0.4rem 0.7rem;
-  border-radius: var(--radius-pill);
-  background: rgba(16, 12, 11, 0.78);
-  color: var(--color-white);
-  font-size: 0.78rem;
-  font-weight: 900;
 }
 
 .service-media-repair {
@@ -649,34 +645,17 @@ textarea {
   font-size: 0.95rem;
 }
 
-.services-followup {
-  display: grid;
-  gap: var(--space-2);
-  justify-items: start;
-  margin-top: 1.15rem;
-  padding: 1.1rem 1.15rem;
-  border: 1px solid rgba(242, 109, 33, 0.22);
-  border-radius: var(--radius-lg);
-  background: #fff4ea;
+.services-note {
+  max-width: 48rem;
+  margin-top: var(--space-4);
+  color: var(--color-ink-soft);
+  font-size: 0.98rem;
 }
 
-.services-followup p {
-  color: var(--color-ink);
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.82rem;
-}
-
-.services-followup a {
+.services-note a {
   color: var(--color-orange-deep);
   font-weight: 900;
-  text-decoration: none;
-}
-
-.services-followup .service-points {
-  margin-top: 0.15rem;
-  padding-left: 1rem;
+  text-underline-offset: 0.16em;
 }
 
 .section-why {
@@ -839,7 +818,7 @@ textarea {
 }
 
 .section-reviews {
-  background: var(--color-night-soft);
+  background: var(--color-frost);
 }
 
 .review-grid {
@@ -857,13 +836,7 @@ textarea {
 }
 
 .review-card {
-  position: relative;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  align-content: start;
-  gap: 0.78rem;
-  min-height: 100%;
-  overflow: hidden;
+  align-self: start;
 }
 
 .review-card p {
@@ -890,7 +863,7 @@ textarea {
 .review-card footer {
   display: grid;
   gap: 0.2rem;
-  margin-top: 0.1rem;
+  margin-top: 1.25rem;
 }
 
 .review-card footer strong {
@@ -1033,7 +1006,7 @@ textarea {
 .contact-grid {
   display: grid;
   gap: var(--space-4);
-  max-width: 62rem;
+  max-width: 68rem;
 }
 
 .contact-copy h2 {
@@ -1050,29 +1023,6 @@ textarea {
   gap: var(--space-2);
   margin-top: var(--space-3);
   max-width: 17rem;
-}
-
-.contact-priority {
-  margin-top: var(--space-3);
-  padding: 1rem 1.05rem;
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.contact-priority-label {
-  display: block;
-  color: rgba(255, 255, 255, 0.64);
-  font-size: 0.74rem;
-  font-weight: 900;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.contact-priority p {
-  margin-top: 0.45rem;
-  color: var(--color-white);
-  font-weight: 800;
 }
 
 .contact-details {
@@ -1140,6 +1090,7 @@ textarea {
 
 .form-card {
   padding: 1.2rem;
+  border: 1px solid rgba(255, 210, 160, 0.16);
   border-radius: var(--radius-lg);
   background: var(--color-paper);
   box-shadow: var(--shadow-strong);
@@ -1346,14 +1297,27 @@ body.show-mobile-cta .mobile-cta {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .contact-details div:last-child {
-    grid-column: 1 / -1;
+.contact-details div:last-child {
+    grid-column: auto;
   }
 }
 
 @media (min-width: 760px) {
   body {
     padding-bottom: 0;
+  }
+
+  .header-actions {
+    display: flex;
+  }
+
+  .header-phone {
+    display: none;
+  }
+
+  .header-actions .button {
+    min-height: 2.75rem;
+    padding: 0.7rem 0.9rem;
   }
 
   .mobile-cta {
@@ -1391,19 +1355,6 @@ body.show-mobile-cta .mobile-cta {
     min-height: 0;
   }
 
-  .services-followup {
-    grid-template-columns: auto minmax(0, 1fr) auto;
-    align-items: center;
-  }
-
-  .services-followup .service-points {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem 1.35rem;
-    margin-top: 0;
-    padding-left: 1.1rem;
-  }
-
   .footer-grid {
     grid-template-columns: 1.2fr 0.6fr 1fr;
     align-items: start;
@@ -1431,6 +1382,10 @@ body.show-mobile-cta .mobile-cta {
     display: flex;
   }
 
+  .header-phone {
+    display: inline;
+  }
+
   .hero-shell {
     padding: 2.1rem 0 1.9rem;
   }
@@ -1444,16 +1399,13 @@ body.show-mobile-cta .mobile-cta {
   .section-heading h2,
   .work-heading h2,
   .contact-copy h2 {
-    font-size: 3.35rem;
+    font-size: 2.65rem;
+    line-height: 1.06;
   }
 
   .photo-frame {
     aspect-ratio: 4 / 3;
     min-height: 15.5rem;
-  }
-
-  .trust-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .service-grid {
@@ -1462,6 +1414,10 @@ body.show-mobile-cta .mobile-cta {
 
   .work-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .work-card:not(.work-card-large) {
+    grid-column: 2 / -1;
   }
 
   .review-grid {
@@ -1475,7 +1431,7 @@ body.show-mobile-cta .mobile-cta {
 
 @media (min-width: 1280px) {
   .contact-grid {
-    max-width: 70rem;
+    max-width: 68rem;
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   }
 }
