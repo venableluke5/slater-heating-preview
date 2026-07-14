@@ -1131,6 +1131,35 @@ body.show-mobile-cta .mobile-cta {
   transform: translateY(0);
 }
 
+@media (max-width: 639px) {
+  .section-services {
+    padding: 2rem 0;
+  }
+
+  .section-services .service-grid {
+    gap: 0.65rem;
+    margin-top: 1.25rem;
+  }
+
+  .section-services .service-media {
+    height: 10.5rem;
+    min-height: 0;
+    aspect-ratio: auto;
+  }
+
+  .section-services .service-body {
+    padding: 0.875rem 1rem 1rem;
+  }
+
+  .section-services .service-card p:not(.card-label) {
+    margin-top: 0.4rem;
+  }
+
+  .section-services .services-note {
+    margin-top: 1.25rem;
+  }
+}
+
 @media (max-width: 979px) {
   .site-nav a,
   .hero-secondary-link,
@@ -1293,6 +1322,25 @@ body.show-mobile-cta .mobile-cta {
 }
 
 @media (min-width: 1280px) {
+  .section-work .work-grid {
+    grid-template-columns: minmax(0, 2fr) minmax(18rem, 1fr);
+    align-items: start;
+  }
+
+  .section-work .work-card-large {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .section-work .work-card:not(.work-card-large) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .section-work .work-card-large .before-after figure {
+    aspect-ratio: 3 / 2;
+  }
+
   .contact-grid {
     max-width: 68rem;
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
