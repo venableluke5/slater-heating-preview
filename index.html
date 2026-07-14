@@ -284,47 +284,6 @@
         </div>
       </section>
 
-      <!-- Reviews: approved customer quotes. -->
-      <section class="section section-reviews" id="reviews">
-        <div class="container">
-          <div class="section-heading reveal" data-reveal>
-            <h2>What customers are saying.</h2>
-            <p>Customer feedback shared on Slater Heating's Facebook page.</p>
-          </div>
-
-          <div class="review-grid">
-            <article class="review-card reveal" data-reveal>
-              <p>
-                "Honest, hard-working, and efficient. He has done multiple jobs in our home, and
-                we would not call anyone else."
-              </p>
-              <footer>
-                <strong>Joel B.</strong>
-                <span>Facebook customer feedback</span>
-              </footer>
-            </article>
-            <article class="review-card reveal" data-reveal>
-              <p>"Thorough and reliable. Thank you, Tim. We will use your services again."</p>
-              <footer>
-                <strong>Teodora M.</strong>
-                <span>Facebook customer feedback</span>
-              </footer>
-            </article>
-            <article class="review-card reveal" data-reveal>
-              <p>
-                "Tim has serviced and fixed issues with our tankless water heaters since we moved
-                into our home. He is always so patient, willing to educate, and ready to answer my
-                many questions. That says a lot to me. I trust him, and he does good work."
-              </p>
-              <footer>
-                <strong>Grace N.</strong>
-                <span>Facebook customer feedback</span>
-              </footer>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <!-- Service area: keep coverage wording broad and public-facing. -->
       <section class="section section-area" id="area">
         <div class="container area-grid">
@@ -376,32 +335,16 @@
             </div>
           </div>
 
-          <aside class="form-card reveal" data-reveal aria-labelledby="request-heading">
-            <div class="form-card-header">
-              <p class="card-label">Prefer a callback?</p>
-              <h3 id="request-heading">Send a short service request.</h3>
-              <p>Leave the basics and Slater Heating can follow up when available.</p>
-            </div>
-
-            <!-- Connect this form to Slater Heating's confirmed inbox or form endpoint before launch. -->
-            <form class="contact-form" name="service-request" method="post" data-request-form>
-              <div class="form-row">
-                <div class="field">
-                  <label for="request-name">Name</label>
-                  <input id="request-name" name="name" type="text" autocomplete="name" required />
-                </div>
-                <div class="field">
-                  <label for="request-phone">Phone</label>
-                  <input id="request-phone" name="phone" type="tel" autocomplete="tel" required />
-                </div>
-              </div>
-              <div class="field">
-                <label for="request-details">What do you need help with?</label>
-                <textarea id="request-details" name="details" placeholder="Briefly describe the heating issue or service you need." required></textarea>
-              </div>
-              <button class="button button-primary" type="submit">Request a Callback</button>
-              <p class="form-status" data-form-status aria-live="polite">A short request is an easy way to share the basics when calling is not convenient.</p>
-            </form>
+          <aside class="contact-card reveal" data-reveal aria-labelledby="call-heading">
+            <p class="card-label">Call Slater Heating</p>
+            <h3 id="call-heading">Talk directly with Tim.</h3>
+            <p>Call to explain the heating issue or service you need.</p>
+            <ul class="contact-checklist">
+              <li>Heating repair and service</li>
+              <li>Boilers, oil burners, and heat pumps</li>
+              <li>Serving Central Maine homeowners</li>
+            </ul>
+            <a class="button button-primary" href="tel:2072996895">Call (207) 299-6895</a>
           </aside>
         </div>
       </section>
@@ -432,7 +375,7 @@
     <!-- Sticky mobile CTA: keep mobile actions simple and call-first. -->
     <div class="mobile-cta" aria-label="Mobile quick actions">
       <a href="tel:2072996895">Call Now</a>
-      <a href="#contact">Request Callback</a>
+      <a href="#services">View Services</a>
     </div>
 
     <script src="script.js?v=20260709-1"></script>

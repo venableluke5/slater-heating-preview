@@ -399,8 +399,7 @@ textarea {
   background: rgba(255, 255, 255, 0.08);
 }
 
-.hero-contact-strip span,
-.form-helper-title {
+.hero-contact-strip span {
   display: block;
   color: rgba(255, 255, 255, 0.64);
   font-size: 0.74rem;
@@ -455,20 +454,14 @@ textarea {
 }
 
 .hero-issue-list,
-.service-points,
-.form-helper ul {
+.service-points {
   margin-top: var(--space-3);
   padding-left: 1.1rem;
 }
 
 .hero-issue-list li,
-.service-points li,
-.form-helper li {
+.service-points li {
   margin-top: 0.45rem;
-}
-
-.form-helper li {
-  color: var(--color-ink-soft);
 }
 
 .trust-bar {
@@ -530,7 +523,6 @@ textarea {
 .why-item p,
 .service-card p,
 .work-card p,
-.review-card p,
 .faq-answer p {
   color: var(--color-muted);
 }
@@ -541,13 +533,11 @@ textarea {
     var(--color-cream);
 }
 
-.section-services .section-heading h2,
-.section-reviews .section-heading h2 {
+.section-services .section-heading h2 {
   color: var(--color-ink);
 }
 
-.section-services .section-heading p,
-.section-reviews .section-heading p {
+.section-services .section-heading p {
   color: var(--color-muted);
 }
 
@@ -817,64 +807,11 @@ textarea {
   text-transform: uppercase;
 }
 
-.section-reviews {
-  background: var(--color-frost);
-}
-
-.review-grid {
-  display: grid;
-  gap: var(--space-3);
-  margin-top: var(--space-4);
-}
-
-.review-card,
 .proof-card {
   padding: var(--space-4);
   border: 1px solid rgba(242, 109, 33, 0.22);
   border-radius: var(--radius-md);
   background: #fff7ed;
-}
-
-.review-card {
-  align-self: start;
-}
-
-.review-card p {
-  color: var(--color-muted);
-  font-size: 1.02rem;
-  line-height: 1.75;
-}
-
-.review-stars {
-  display: inline-flex;
-  gap: 0;
-  color: var(--color-orange);
-  font-size: 1.05rem;
-  line-height: 1;
-  letter-spacing: 0;
-}
-
-.review-stars span {
-  display: inline-block;
-  color: var(--color-orange);
-  line-height: 1;
-}
-
-.review-card footer {
-  display: grid;
-  gap: 0.2rem;
-  margin-top: 1.25rem;
-}
-
-.review-card footer strong {
-  color: var(--color-ink);
-  font-weight: 900;
-}
-
-.review-card footer span {
-  color: rgba(34, 51, 68, 0.62);
-  font-size: 0.82rem;
-  font-weight: 700;
 }
 
 .proof-card h3 {
@@ -1088,111 +1025,6 @@ textarea {
   margin-top: 1rem;
 }
 
-.form-card {
-  padding: 1.2rem;
-  border: 1px solid rgba(255, 210, 160, 0.16);
-  border-radius: var(--radius-lg);
-  background: var(--color-paper);
-  box-shadow: var(--shadow-strong);
-}
-
-.form-card-header p:not(.card-label) {
-  color: var(--color-muted);
-  margin-top: 0.45rem;
-}
-
-.form-card-header h3 {
-  font-size: 1.55rem;
-}
-
-.contact-form {
-  display: grid;
-  gap: var(--space-2);
-  margin-top: var(--space-3);
-}
-
-.form-row {
-  display: grid;
-  gap: var(--space-3);
-}
-
-.field {
-  display: grid;
-  gap: 0.45rem;
-}
-
-.field label,
-.contact-method legend {
-  color: var(--color-ink);
-  font-weight: 900;
-}
-
-.field input,
-.field select,
-.field textarea {
-  width: 100%;
-  min-height: 3rem;
-  padding: 0.85rem 0.95rem;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-sm);
-  background: var(--color-white);
-  color: var(--color-ink);
-}
-
-.field textarea {
-  min-height: 7rem;
-  resize: vertical;
-}
-
-.form-helper {
-  padding: var(--space-3);
-  border: 1px solid rgba(20, 41, 54, 0.1);
-  border-radius: var(--radius-md);
-  background: #f7f2ec;
-}
-
-.form-helper-title {
-  color: var(--color-orange-deep);
-}
-
-.form-helper ul {
-  margin-bottom: 0;
-}
-
-.form-status {
-  color: var(--color-muted);
-  font-size: 0.95rem;
-}
-
-.form-note {
-  color: var(--color-muted);
-  font-size: 0.92rem;
-}
-
-.contact-method {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  padding: 0;
-  border: 0;
-}
-
-.contact-method legend {
-  width: 100%;
-}
-
-.contact-method label {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.65rem 0.8rem;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-sm);
-  background: var(--color-white);
-  color: var(--color-ink);
-  font-weight: 800;
-}
-
 .site-footer {
   border-top: 1px solid var(--color-line-on-dark);
   background: var(--color-night);
@@ -1279,17 +1111,12 @@ body.show-mobile-cta .mobile-cta {
 }
 
 @media (min-width: 640px) {
-  .form-row {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .button-large {
     width: auto;
   }
 
   .trust-grid,
-  .service-grid,
-  .review-grid {
+  .service-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1418,10 +1245,6 @@ body.show-mobile-cta .mobile-cta {
 
   .work-card:not(.work-card-large) {
     grid-column: 2 / -1;
-  }
-
-  .review-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .proof-card-feature {

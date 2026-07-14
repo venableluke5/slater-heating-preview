@@ -3,8 +3,6 @@ const siteNav = document.querySelector("[data-site-nav]");
 const yearTarget = document.querySelector("[data-current-year]");
 const revealItems = document.querySelectorAll("[data-reveal]");
 const heroSection = document.querySelector(".hero-section");
-const requestForm = document.querySelector("[data-request-form]");
-const formStatus = document.querySelector("[data-form-status]");
 
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
@@ -68,20 +66,5 @@ if (revealItems.length) {
 
   revealItems.forEach((item) => {
     revealObserver.observe(item);
-  });
-}
-
-if (requestForm) {
-  requestForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    if (!requestForm.reportValidity()) {
-      return;
-    }
-
-    if (formStatus) {
-      formStatus.textContent =
-        "This preview form is ready to connect to Slater Heating's preferred service-request inbox before launch.";
-    }
   });
 }
