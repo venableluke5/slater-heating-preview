@@ -3,6 +3,7 @@ const siteNav = document.querySelector("[data-site-nav]");
 const yearTarget = document.querySelector("[data-current-year]");
 const revealItems = document.querySelectorAll("[data-reveal]");
 const heroSection = document.querySelector(".hero-section");
+const closingSections = document.querySelectorAll("#contact, .site-footer");
 
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
@@ -64,6 +65,23 @@ if (heroSection && "IntersectionObserver" in window) {
   );
 
   ctaObserver.observe(heroSection);
+}
+
+if (closingSections.length && "IntersectionObserver" in window) {
+  const visibleClosingSections = new Set();
+  const closingObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        visibleClosingSections.add(entry.target);
+      } else {
+        visibleClosingSections.delete(entry.target);
+      }
+    });
+
+    document.body.classList.toggle("closing-in-view", visibleClosingSections.size > 0);
+  });
+
+  closingSections.forEach((section) => closingObserver.observe(section));
 }
 
 if (revealItems.length && "IntersectionObserver" in window) {

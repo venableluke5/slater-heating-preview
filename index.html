@@ -25,7 +25,7 @@
     <title>Slater Heating | Heating and HVAC Service in Central Maine</title>
     <link rel="icon" href="favicon.ico" sizes="any" type="image/x-icon" />
     <script>document.documentElement.classList.replace("no-js", "js");</script>
-    <link rel="stylesheet" href="styles.css?v=20260715-phase3" />
+    <link rel="stylesheet" href="styles.css?v=20260715-phase4" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -382,74 +382,55 @@
       </section>
 
       <!-- Service area: keep coverage wording broad and public-facing. -->
-      <section class="section section-area" id="area">
-        <div class="container area-grid">
-          <div class="section-heading reveal" data-reveal>
-            <p class="section-kicker">Service area</p>
-            <h2>Serving homeowners across Central Maine.</h2>
-            <p>Based out of Eddington, Slater Heating serves homeowners across Central Maine.</p>
-          </div>
-
-          <div class="area-panel reveal" data-reveal>
-            <div class="area-list">
-              <span>Based out of Eddington</span>
-              <span>Central Maine homeowners</span>
+      <section class="section section-area closing-area" id="area">
+        <div class="container closing-area-shell">
+          <p class="section-kicker">Service area</p>
+          <div class="closing-area-grid">
+            <h2><span>Based near Eddington.</span> Serving homeowners across Central Maine.</h2>
+            <div class="closing-area-note">
+              <span class="closing-area-marker" aria-hidden="true"></span>
+              <p>Call to confirm service availability for your location.</p>
             </div>
-            <p class="area-note">Call to confirm service availability for your location.</p>
           </div>
         </div>
       </section>
 
-      <!-- Contact: keep this section call-first and straightforward. -->
-      <section class="section section-contact" id="contact">
-        <div class="container contact-grid">
-          <div class="contact-copy reveal" data-reveal>
+      <!-- Contact: one call-first closing composition with only verified details. -->
+      <section class="section section-contact final-call" id="contact">
+        <div class="container final-call-shell">
+          <header class="final-call-heading">
             <p class="section-kicker">Contact</p>
             <h2>Heating service starts with a call.</h2>
             <p>Call the Slater Heating business line to explain the issue and discuss the next step.</p>
+          </header>
 
-            <div class="contact-actions">
-              <a class="button button-primary" href="tel:2072996895" aria-label="Call Slater Heating at (207) 299-6895">Call Now</a>
-            </div>
-
-            <div class="contact-details">
-              <div>
-                <span>Phone</span>
-                <a href="tel:2072996895" aria-label="Call Slater Heating at (207) 299-6895">(207) 299-6895</a>
-              </div>
-              <div>
-                <span>Owner / operator</span>
-                <p>Tim Slater</p>
-              </div>
-              <div>
-                <span>Service area</span>
-                <p>Central Maine</p>
-              </div>
-              <div>
-                <span>Availability</span>
-                <p>Call to confirm</p>
-              </div>
-            </div>
+          <div class="final-call-action">
+            <p>Slater Heating business line</p>
+            <a class="final-call-phone" href="tel:2072996895" aria-label="Call Slater Heating at (207) 299-6895">(207) 299-6895</a>
+            <a class="button button-primary button-large" href="tel:2072996895" aria-label="Call Slater Heating at (207) 299-6895">Call Now</a>
           </div>
 
-          <aside class="contact-card reveal" data-reveal aria-labelledby="call-heading">
-            <p class="card-label">Call Slater Heating</p>
-            <h3 id="call-heading">Talk with Slater Heating.</h3>
-            <p>Call to explain the heating issue or service you need.</p>
-            <ul class="contact-checklist">
-              <li>Heating repair and service</li>
-              <li>Boilers, oil burners, and heat pumps</li>
-              <li>Serving Central Maine homeowners</li>
-            </ul>
-            <a class="button button-primary" href="tel:2072996895" aria-label="Call Slater Heating at (207) 299-6895">Call (207) 299-6895</a>
-          </aside>
+          <dl class="final-call-details">
+            <div>
+              <dt>Owner / Operator</dt>
+              <dd>Tim Slater</dd>
+            </div>
+            <div>
+              <dt>Service area</dt>
+              <dd>Central Maine</dd>
+            </div>
+            <div>
+              <dt>Availability</dt>
+              <dd>Call to confirm</dd>
+            </div>
+          </dl>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
+    <footer class="site-footer closing-footer">
+      <div class="container footer-compact">
+        <div class="footer-brand">
           <img
             src="images/Slater Heating stacked logo.png"
             alt="Slater Heating"
@@ -457,14 +438,18 @@
           />
           <p>Owner-operated heating service for Central Maine homeowners.</p>
         </div>
-        <div class="footer-links">
+        <nav class="footer-links" aria-label="Footer">
           <a href="#services">Services</a>
+          <a href="#why">Why Slater</a>
+          <a href="#work">Work</a>
           <a href="#area">Service Area</a>
-          <a href="tel:2072996895" aria-label="Call Slater Heating at (207) 299-6895">Call Now</a>
+        </nav>
+        <div class="footer-contact">
+          <span>Business line</span>
+          <a href="tel:2072996895" aria-label="Call Slater Heating at (207) 299-6895">(207) 299-6895</a>
         </div>
         <div class="footer-meta">
           <p>&copy; <span data-current-year></span> Slater Heating</p>
-          <p>Call for current availability and service questions.</p>
         </div>
       </div>
     </footer>
@@ -475,6 +460,6 @@
       <a href="#services">View Services</a>
     </div>
 
-    <script src="script.js?v=20260714-phase1"></script>
+    <script src="script.js?v=20260715-phase4"></script>
   </body>
 </html>
