@@ -2902,3 +2902,155 @@ body.show-mobile-cta.closing-in-view .mobile-cta {
     grid-column: 1 / -1;
   }
 }
+
+/* Final polish: legibility, alignment, gallery balance, and call emphasis. */
+.menu-toggle {
+  min-width: 2.75rem;
+}
+
+.hero-area-note {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.84rem;
+}
+
+.proof-rail-item span {
+  font-size: 0.72rem;
+}
+
+.services-primary-image figcaption {
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.services-support-image figcaption {
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+}
+
+.services-index-item p {
+  font-size: 0.98rem;
+  line-height: 1.58;
+}
+
+.services-note {
+  font-size: 0.96rem;
+}
+
+.case-study-heading > p:last-child {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.case-study-figure figcaption span,
+.field-gallery-item figcaption span {
+  font-size: 0.72rem;
+}
+
+.case-study-figure figcaption strong {
+  font-size: 0.98rem;
+}
+
+.case-study-note {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.9rem;
+}
+
+.owner-story-portrait figcaption {
+  font-size: 0.88rem;
+}
+
+.owner-trust-point p {
+  font-size: 0.96rem;
+  line-height: 1.58;
+}
+
+.field-gallery-item figcaption strong {
+  font-size: 1rem;
+}
+
+.final-call-action > p,
+.final-call-details dt,
+.footer-contact span {
+  font-size: 0.72rem;
+}
+
+.footer-brand p,
+.footer-meta p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-contact span {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.footer-meta {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 639px) {
+  .header-shell {
+    gap: 0.625rem;
+  }
+
+  .mobile-call {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .menu-toggle {
+    padding-right: 0.65rem;
+    padding-left: 0.65rem;
+  }
+
+  .services-index-item {
+    padding-top: 1.05rem;
+    padding-bottom: 1.05rem;
+  }
+
+  .field-gallery {
+    padding-bottom: 4.25rem;
+  }
+
+  .field-gallery-grid {
+    gap: 2.15rem;
+    margin-top: 2.5rem;
+  }
+
+  .field-gallery-item figcaption {
+    padding-top: 0.75rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .field-gallery-grid {
+    position: relative;
+    grid-template-rows: auto;
+  }
+
+  .field-gallery-tall {
+    grid-row: 1;
+  }
+
+  .field-gallery-detail {
+    width: min(100%, 16rem);
+    max-width: 16rem;
+    grid-column: 7 / 10;
+    grid-row: 1;
+    align-self: end;
+    justify-self: end;
+    z-index: 2;
+    margin: 0 0 1rem;
+    padding: 0.75rem;
+    border-left: 1px solid rgba(21, 45, 56, 0.24);
+    background: #e8e0d6;
+  }
+
+  .final-call-phone {
+    margin-bottom: 1.25rem;
+    font-size: 3.15rem;
+    font-weight: 850;
+  }
+
+  .final-call-action .button {
+    min-width: 12rem;
+  }
+}
