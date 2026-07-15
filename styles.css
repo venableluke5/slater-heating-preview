@@ -1838,6 +1838,352 @@ body.show-mobile-cta .mobile-cta {
   }
 }
 
+/* Phase 3: owner-operated story and editorial field-work gallery. */
+.brand {
+  min-height: 2.75rem;
+}
+
+.owner-story {
+  position: relative;
+  padding: 4.75rem 0 5rem;
+  border-top: 1px solid rgba(169, 91, 50, 0.32);
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+.owner-story::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: min(28vw, 20rem);
+  height: 0.2rem;
+  background: var(--color-orange);
+  content: "";
+}
+
+.owner-story h2,
+.owner-story h3 {
+  color: var(--color-ink);
+}
+
+.owner-story-heading {
+  max-width: 49rem;
+}
+
+.owner-story-heading h2 {
+  max-width: 45rem;
+  font-size: clamp(2.4rem, 9vw, 4.6rem);
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+}
+
+.owner-story-layout {
+  display: grid;
+  gap: 2.4rem;
+  margin-top: 2.75rem;
+}
+
+.owner-story-portrait {
+  margin: 0;
+}
+
+.owner-story-portrait img {
+  display: block;
+  width: calc(100% + 2.5rem);
+  max-width: none;
+  height: auto;
+  margin-left: -1.25rem;
+  border-top: 1px solid rgba(21, 45, 56, 0.48);
+  border-bottom: 0.25rem solid var(--color-orange);
+  object-fit: cover;
+  object-position: center;
+}
+
+.owner-story-portrait figcaption {
+  max-width: 34rem;
+  padding-top: 0.85rem;
+  color: var(--color-steel);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.owner-story-copy {
+  border-top: 1px solid rgba(21, 45, 56, 0.28);
+  padding-top: 1.5rem;
+}
+
+.owner-label {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
+  align-items: baseline;
+  color: var(--color-orange-deep);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.owner-label strong {
+  color: var(--color-ink);
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.owner-story-lead {
+  max-width: 39rem;
+  margin-top: 1rem;
+  color: var(--color-steel);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.owner-trust-list {
+  margin-top: 2rem;
+  border-bottom: 1px solid rgba(21, 45, 56, 0.24);
+}
+
+.owner-trust-point {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  gap: 0.9rem;
+  padding: 1.15rem 0;
+  border-top: 1px solid rgba(21, 45, 56, 0.24);
+}
+
+.owner-trust-point > span {
+  color: var(--color-orange-deep);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.owner-trust-point h3 {
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.owner-trust-point p {
+  max-width: 34rem;
+  margin-top: 0.4rem;
+  color: var(--color-steel);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.field-gallery {
+  padding: 4.5rem 0 4.75rem;
+  border-top: 1px solid rgba(21, 45, 56, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: #e8e0d6;
+  color: var(--color-ink);
+}
+
+.field-gallery-heading {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 56rem;
+}
+
+.field-gallery-heading h2 {
+  max-width: 42rem;
+  color: var(--color-ink);
+  font-size: clamp(2.25rem, 8vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.field-gallery-heading > p {
+  max-width: 36rem;
+  color: var(--color-steel);
+  line-height: 1.7;
+}
+
+.field-gallery-grid {
+  display: grid;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.field-gallery-item {
+  margin: 0;
+}
+
+.field-gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(21, 45, 56, 0.24);
+  object-fit: cover;
+}
+
+.field-gallery-item figcaption {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.8rem;
+  align-items: baseline;
+  padding-top: 0.85rem;
+  border-top: 0.2rem solid var(--color-orange);
+}
+
+.field-gallery-item figcaption span {
+  color: var(--color-orange-deep);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.field-gallery-item figcaption strong {
+  color: var(--color-ink);
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+
+.field-gallery-lead img {
+  aspect-ratio: 1.12 / 1;
+  object-position: center;
+}
+
+.field-gallery-tall {
+  width: min(88%, 28rem);
+}
+
+.field-gallery-tall img {
+  aspect-ratio: 0.68 / 1;
+  object-position: center;
+}
+
+.field-gallery-detail {
+  width: min(72%, 20rem);
+  justify-self: end;
+}
+
+.field-gallery-detail img {
+  aspect-ratio: auto;
+}
+
+@media (min-width: 640px) {
+  .owner-story,
+  .field-gallery {
+    padding-top: 5.75rem;
+    padding-bottom: 6rem;
+  }
+
+  .owner-story-portrait img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .owner-story-copy {
+    max-width: 44rem;
+  }
+
+  .field-gallery-heading {
+    grid-template-columns: minmax(0, 1fr) minmax(17rem, 0.52fr);
+    max-width: none;
+    align-items: end;
+  }
+
+  .field-gallery-tall {
+    width: min(72%, 31rem);
+    justify-self: end;
+  }
+
+  .field-gallery-detail {
+    width: min(52%, 21rem);
+    justify-self: start;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 900px) {
+  .owner-story {
+    padding-top: 7rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .owner-story-heading {
+    margin-left: 7%;
+  }
+
+  .owner-story-layout {
+    grid-template-columns: minmax(0, 1.55fr) minmax(22rem, 0.72fr);
+    gap: clamp(2.5rem, 5vw, 5.5rem);
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .owner-story-portrait img {
+    aspect-ratio: 16 / 9;
+    object-position: center;
+  }
+
+  .owner-story-copy {
+    margin-top: 4rem;
+  }
+
+  .field-gallery {
+    padding-top: 7rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .field-gallery-heading {
+    grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.46fr);
+  }
+
+  .field-gallery-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: start;
+    margin-top: 4.5rem;
+  }
+
+  .field-gallery-lead {
+    grid-column: 1 / 8;
+    grid-row: 1;
+  }
+
+  .field-gallery-lead img {
+    aspect-ratio: 1.08 / 1;
+  }
+
+  .field-gallery-tall {
+    width: auto;
+    grid-column: 9 / 13;
+    grid-row: 1 / span 2;
+    margin-top: 5rem;
+  }
+
+  .field-gallery-detail {
+    width: auto;
+    max-width: 19rem;
+    grid-column: 6 / 9;
+    grid-row: 2;
+    justify-self: end;
+    margin-top: -3rem;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .owner-story-layout {
+    grid-template-columns: minmax(0, 1.65fr) minmax(24rem, 0.68fr);
+  }
+
+  .field-gallery-lead {
+    grid-column: 1 / 9;
+  }
+
+  .field-gallery-tall {
+    grid-column: 10 / 13;
+  }
+
+  .field-gallery-detail {
+    grid-column: 7 / 10;
+  }
+}
+
 @media (min-width: 1280px) {
   .site-nav {
     gap: 2rem;
