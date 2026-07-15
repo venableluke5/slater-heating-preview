@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,7 +24,8 @@
     <meta name="twitter:image" content="images/slater-AC-working.jpg" />
     <title>Slater Heating | Heating and HVAC Service in Central Maine</title>
     <link rel="icon" href="favicon.ico" sizes="any" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css?v=20260709-1" />
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <link rel="stylesheet" href="styles.css?v=20260714-phase1" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -39,6 +40,10 @@
           />
         </a>
 
+        <a class="mobile-call" href="tel:2072996895" aria-label="Call Tim at 207-299-6895">
+          Call Tim
+        </a>
+
         <button
           class="menu-toggle"
           type="button"
@@ -46,90 +51,76 @@
           aria-controls="primary-navigation"
           data-menu-toggle
         >
-          Menu
+          <span>Menu</span>
+          <span class="menu-icon" aria-hidden="true"></span>
         </button>
 
         <nav class="site-nav" id="primary-navigation" aria-label="Primary" data-site-nav>
           <a href="#services">Services</a>
           <a href="#why">Why Slater</a>
           <a href="#work">Work</a>
-          <a href="#area">Service Area</a>
           <a href="#contact">Contact</a>
         </nav>
 
         <div class="header-actions">
           <a class="header-phone" href="tel:2072996895">(207) 299-6895</a>
-          <a class="button button-primary" href="tel:2072996895">Call Now</a>
+          <a class="button button-primary" href="tel:2072996895">Call Tim</a>
         </div>
       </div>
     </header>
 
     <main id="main-content">
       <section class="hero-section" id="top">
-        <div class="hero-shell">
-          <div class="container hero-grid">
-            <div class="hero-content reveal" data-reveal>
-              <p class="section-kicker">Owner-operated heating service</p>
-              <h1>Heating Service and Cleanings for Central Maine Homes</h1>
-              <p class="hero-lead">
-                Call Tim Slater for heating repair, oil burner service, boiler work, seasonal
-                cleanings, and heat pump cleaning.
-              </p>
-              <p class="hero-trust-sentence">
-                Owner-operated by Tim Slater, with 25 years in the field and licensed/insured
-                service.
-              </p>
-
-              <div class="hero-actions">
-                <a class="button button-primary button-large" href="tel:2072996895">Call Now</a>
-              </div>
-              <a class="hero-secondary-link" href="#services">See heating services</a>
-
-              <ul class="hero-trust-list" aria-label="Quick trust points">
-                <li>Heating repair and service</li>
-                <li>Boilers, burners, and heat pumps</li>
-              </ul>
+        <div class="container hero-grid">
+            <div class="hero-intro">
+              <p class="section-kicker">From the field · Central Maine</p>
+              <h1>Practical heating help for Maine homes.</h1>
             </div>
 
-            <div class="hero-visual reveal" data-reveal>
-              <div class="photo-frame photo-frame-main">
+            <div class="hero-visual">
+              <div class="hero-photo-frame">
                 <img
                   src="images/slater-AC-working.jpg"
-                  alt="Tim Slater working on outdoor heating and HVAC equipment at a home"
+                  alt="Technician working on outdoor heat pump equipment beside a home"
                   class="hero-photo"
                   fetchpriority="high"
+                  width="1536"
+                  height="1536"
                 />
               </div>
+            </div>
 
-              <aside class="hero-service-panel" aria-label="Quick service summary">
-                <p>What homeowners call about</p>
-                <h2>Reliable heating help without a complicated process.</h2>
-                <ul class="hero-issue-list">
-                  <li>No heat or weak heat</li>
-                  <li>Oil burner service</li>
-                  <li>Boiler service</li>
-                  <li>Heat pump cleaning</li>
-                </ul>
-                <a href="tel:2072996895">Call now</a>
-              </aside>
+            <div class="hero-content">
+              <p class="hero-lead">
+                Heating repair, oil burner and boiler service, seasonal cleanings, and heat pump
+                cleaning—with a direct call to Tim when you need to talk through the work.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary button-large" href="tel:2072996895">
+                  Call Tim <span>(207) 299-6895</span>
+                </a>
+              </div>
+              <p class="hero-area-note">Serving Central Maine · Call to confirm availability</p>
             </div>
           </div>
-        </div>
       </section>
 
-        <!-- Trust Bar: keep these short and factual. -->
-        <section class="trust-bar" aria-label="Service highlights">
-          <div class="container trust-grid">
-            <div>
-              <strong>Owner-operated service</strong>
-            </div>
-            <div>
-              <strong>25 years in the field</strong>
-            </div>
-            <div>
-              <strong>Licensed and insured</strong>
-            </div>
+      <!-- Proof rail: use only source-supported, public-facing facts. -->
+      <section class="proof-rail" aria-label="Service highlights">
+        <div class="container proof-rail-grid">
+          <div class="proof-rail-item">
+            <span>Direct contact</span>
+            <strong>Talk with Tim</strong>
           </div>
+          <div class="proof-rail-item">
+            <span>Heating work</span>
+            <strong>Boilers, burners &amp; heat pumps</strong>
+          </div>
+          <div class="proof-rail-item">
+            <span>Service area</span>
+            <strong>Central Maine</strong>
+          </div>
+        </div>
       </section>
 
       <!-- Services: keep aligned with confirmed offerings in client-brief.md. -->
@@ -238,7 +229,7 @@
             <article class="why-item reveal" data-reveal>
               <span>Field</span>
               <h3>Practical experience</h3>
-              <p>Decades in the field matter when your system needs thoughtful repair, cleaning, or replacement planning.</p>
+              <p>Heating systems benefit from thoughtful repair, cleaning, and replacement planning.</p>
             </article>
             <article class="why-item reveal" data-reveal>
               <span>Talk</span>
@@ -344,8 +335,8 @@
                 <p>Central Maine</p>
               </div>
               <div>
-                <span>Credentials</span>
-                <p>Licensed and insured</p>
+                <span>Availability</span>
+                <p>Call to confirm</p>
               </div>
             </div>
           </div>
@@ -393,6 +384,6 @@
       <a href="#services">View Services</a>
     </div>
 
-    <script src="script.js?v=20260709-1"></script>
+    <script src="script.js?v=20260714-phase1"></script>
   </body>
 </html>

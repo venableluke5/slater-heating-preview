@@ -9,10 +9,14 @@ if (yearTarget) {
 }
 
 if (menuToggle && siteNav) {
-  const closeMenu = () => {
+  const closeMenu = ({ returnFocus = false } = {}) => {
     siteNav.classList.remove("is-open");
     menuToggle.setAttribute("aria-expanded", "false");
     document.body.classList.remove("menu-open");
+
+    if (returnFocus) {
+      menuToggle.focus();
+    }
   };
 
   menuToggle.addEventListener("click", () => {
@@ -25,6 +29,22 @@ if (menuToggle && siteNav) {
     link.addEventListener("click", closeMenu);
   });
 
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
+      closeMenu({ returnFocus: true });
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (
+      siteNav.classList.contains("is-open") &&
+      !siteNav.contains(event.target) &&
+      !menuToggle.contains(event.target)
+    ) {
+      closeMenu();
+    }
+  });
+
   window.addEventListener("resize", () => {
     if (window.innerWidth >= 980) {
       closeMenu();
@@ -32,7 +52,7 @@ if (menuToggle && siteNav) {
   });
 }
 
-if (heroSection) {
+if (heroSection && "IntersectionObserver" in window) {
   const ctaObserver = new IntersectionObserver(
     ([entry]) => {
       const shouldShow = !entry.isIntersecting;
@@ -46,7 +66,7 @@ if (heroSection) {
   ctaObserver.observe(heroSection);
 }
 
-if (revealItems.length) {
+if (revealItems.length && "IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
@@ -67,4 +87,6 @@ if (revealItems.length) {
   revealItems.forEach((item) => {
     revealObserver.observe(item);
   });
+} else {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
 }
