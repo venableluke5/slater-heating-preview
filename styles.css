@@ -2483,14 +2483,16 @@ body.show-mobile-cta .mobile-cta {
   .services-editorial {
     grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
     grid-template-rows: auto auto;
+    grid-template-areas:
+      "primary index"
+      "support index";
     gap: 0 5rem;
     align-items: start;
     margin-top: 4rem;
   }
 
   .services-primary-image {
-    grid-column: 1;
-    grid-row: 1;
+    grid-area: primary;
   }
 
   .services-image-frame {
@@ -2502,8 +2504,7 @@ body.show-mobile-cta .mobile-cta {
   }
 
   .services-index {
-    grid-column: 2;
-    grid-row: 1 / span 2;
+    grid-area: index;
   }
 
   .services-index-item {
@@ -2523,10 +2524,9 @@ body.show-mobile-cta .mobile-cta {
 
   .services-support-ac {
     width: 62%;
-    grid-column: 1;
-    grid-row: 2;
+    grid-area: support;
     justify-self: end;
-    margin-top: -6rem;
+    margin-top: 1.25rem;
     border: 6px solid var(--color-cream);
   }
 
